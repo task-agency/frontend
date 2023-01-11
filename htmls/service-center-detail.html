@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>고객 센터</title>
+<!--    <link rel="stylesheet" href="../assets/scss/main.css">-->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <!--    <script type="module" src="../assets/js/main.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Create a tag that we will use as the editable area. -->
+    <!-- You can use a div tag as well. -->
+
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+    <!-- Initialize the editor. -->
+</head>
+<body>
+<nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1">
+    <div class="container container-fluid" >
+        <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
+        <span class="material-symbols-outlined ms-3 text-secondary" style="font-size: 38px">
+            apps
+        </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
+                <li class="nav-item">
+                    <a class="nav-link text-black" aria-current="page" href="./workspaces.html">
+                        Workspaces
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./milestones.html">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./experts.html">
+                        Experts
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-5 ms-auto mb-lg-0 d-flex align-content-center justify-content-center align-items-center">
+                <li class="nav-item">
+                    <div class="input-group input-group-sm">
+                        <input type="search" class="form-control border-end-0" placeholder="Search" >
+                        <label class="input-group-text" for="">
+                            <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                search
+                            </span>
+                        </label>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link text-muted"  id="dropdownMenuButton2" data-mdb-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                            <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                notifications
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="width: 350px">
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img5.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Lucas
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    님이 Milestone을 제안 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "모바일 앱 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img6.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Ben.cha
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                     님이 일일 업무일지를 등록 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "와이어 프레임 작성"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img8.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Cha Jee Hyung
+                                                    </span>
+                                                <span class="small" style="font-size: smaller">
+                                                        님 권한이 관리자로 변경 되었습니다.
+                                                    </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "플랙폼 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center" href="notifications.html">
+                                    <small>
+                                        전체 보기
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a href="./messages.html" class="nav-link text-muted">
+                        <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                            chat
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="./service-center.html" class="nav-link text-primary">
+                         <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                            help
+                        </span>
+                    </a>
+                    <div class="border-bottom border-top w-100 border-primary">
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="" class="nav-link text-muted" id="dropdownMenuButton1" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img class="user" src="../assets/img/img6.jpg"/>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="./profile-info.html">
+                                    <small>
+                                        마이 페이지
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./settings.html">
+                                    <small>
+                                        계정 설정
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <small>
+                                        로그 아웃
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<main class="main d-flex">
+    <!--    <nav class="snb border">-->
+    <!--        <div class="position-sticky mt-2">-->
+    <!--            <div href="/" class="p-2 text-center">-->
+    <!--                <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">-->
+    <!--                <div class="w-100 border-bottom mt-3">-->
+
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">-->
+    <!--                <li class="nav-item">-->
+    <!--                    <a class="nav-link text-center text-muted" href="./workspace-dashboard.html">-->
+    <!--                        <span class="material-icons-outlined">-->
+    <!--                            dashboard-->
+    <!--                        </span>-->
+    <!--                    </a>-->
+    <!--                </li>-->
+    <!--                <li class="nav-item">-->
+    <!--                    <a href="./workspace-task-kaban.html" class="nav-link text-center text-muted">-->
+    <!--                       <span class="material-icons-outlined">-->
+    <!--                        check_circle-->
+    <!--                        </span>-->
+    <!--                    </a>-->
+    <!--                </li>-->
+    <!--                <li class="nav-item">-->
+    <!--                    <a href="./workspace-milestones.html" class="nav-link text-center text-muted">-->
+    <!--                        <span class="material-icons-outlined">-->
+    <!--                        view_timeline-->
+    <!--                    </span>-->
+    <!--                    </a>-->
+    <!--                </li>-->
+    <!--                <li class="nav-item" href="">-->
+    <!--                    <a href="./workspace-channels.html" class="nav-link text-center text-muted">-->
+    <!--                       <span class="material-icons-outlined">-->
+    <!--                        question_answer-->
+    <!--                        </span>-->
+    <!--                    </a>-->
+    <!--                </li>-->
+    <!--                <li class="nav-item" href="" >-->
+    <!--                    <a href="./workspace-members.html" class="nav-link text-center text-muted">-->
+    <!--                        <span class="material-icons-outlined">-->
+    <!--                            people-->
+    <!--                    </span>-->
+    <!--                    </a>-->
+    <!--                </li>-->
+    <!--                <li class="nav-item" href="" >-->
+    <!--                    <a href="./workspace-setting.html" class="nav-link text-center text-primary">-->
+    <!--                        <span class="material-icons-outlined">-->
+    <!--                        settings-->
+    <!--                    </span>-->
+    <!--                    </a>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </nav>-->
+
+    <div class="container container-fluid">
+        <div class="row mt-4 align-items-center justify-content-center align-content-center">
+            <div class="col-10">
+                <div class="d-flex align-items-center pb-2 border-bottom">
+                    <div class="me-auto">
+                        <header>
+                            <div class="">
+                                <h5 class="mb-0">
+                                    공지사항
+                                </h5>
+                            </div>
+                        </header>
+
+                    </div>
+                    <div class="ms-auto">
+                        <div class="input-group input-group-sm">
+                            <input type="search" class="form-control" placeholder="Search">
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="mt-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="mt-2">
+                                <div class="d-flex align-items-center border-bottom p-2" style="background-color: #f8f9fa">
+                                    <span class="small">
+                                        11월, 고객센터 운영 시간 안내
+                                    </span>
+
+                                </div>
+                                <div class="d-flex align-items-center border-bottom p-2">
+                                    <span class="small">
+                                       개인정보처리방침 개정 안내 (시행일:1월 7일)
+                                    </span>
+
+                                </div>
+                                <div class="d-flex align-items-center border-bottom p-2">
+                                    <span class="small">
+                                      패널티 정책 안내 (시행일: 7월 4일)
+                                    </span>
+
+                                </div>
+                                <div class="d-flex align-items-center border-bottom p-2">
+                                    <span class="small">
+                                      태스크에이젼시를 사칭하는 메시지, 조심하세요.
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="d-flex align-items-center">
+                                <h5 class="fw-bold">
+                                    이것이야말로 무엇이 희망의 이것을 놀이 힘있다.
+                                </h5>
+
+                            </div>
+                            <div class="mt-2">
+                                <div class="d-flex align-items-center border-bottom p-2">
+                                    <span class="small">
+                                        이것이야말로 무엇이 희망의 이것을 놀이 힘있다. 사랑의 붙잡아 시들어 운다. 이 얼음 앞이 아름답고 불어 않는 아니다. 청춘 기관과 풀밭에 구하지 있다. 하여도 그들을 그들의 풀이 위하여 긴지라 설산에서 속에 운다. 심장의 이상의 가는 같은 온갖 어디 있으랴? 주며, 설레는 있는 장식하는 인간에 용감하고 품었기 찾아 같이, 피다. 얼음에 튼튼하며, 얼음이 일월과 풀이 사막이다. 그들의 노래하며 이상은 이성은 있는가? 가는 하는 따뜻한 있는가? 수 속에 두손을 이상은 그리하였는가? <br/><br/>
+
+                                        속에 그들은 무엇을 이상의 가는 꽃이 아니더면, 우리 천지는 것이다. 풍부하게 얼마나 이상, 품고 타오르고 눈에 천지는 설산에서 피어나기 듣는다. 생의 생생하며, 반짝이는 우리의 우는 같으며, 사라지지 이상의 운다. 이 이것은 이것을 황금시대다. 풀이 꽃이 같이, 철환하였는가? 청춘이 천지는 바이며, 이성은 풀밭에 산야에 철환하였는가? 되는 피어나는 천고에 가치를 커다란 주며, 천지는 불어 물방아 것이다. 어디 찾아다녀도, 청춘은 힘차게 공자는 대중을 없으면, 있는가? 원질이 황금시대를 위하여 아니더면, 이상 열매를 있다.
+                                    </span>
+
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <h6 class="mb-0">댓글</h6>
+                                    </div>
+
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img6.jpg"/>
+                                        <div class="form-floating ms-3 w-100">
+                                            <textarea class="form-control w-100" name="" placeholder="Leave a comment here" id="floatingTextarea" cols="30" rows="5"></textarea>
+                                            <label for="floatingTextarea">Comments</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="align-content-center d-flex mt-4">
+                                        <img class="user" src="../assets/img/img7.jpg"/>
+                                        <div class="ms-2">
+                                            <span class="small d-flex">
+                                                Cha Jee Hyung
+                                            </span>
+                                            <span class="text-muted d-flex mt-1" style="font-size: x-small">
+                                                3일전
+                                            </span>
+                                            <span class="small text-muted">
+                                                Sublime Text 3.0 brings a refreshed UI theme, new color schemes, and a new icon. Some of the other highlights are big syntax highlighting improvements, touch input support on Windows, Touch Bar support on macOS, and apt/yum/pacman repositories for Linux.
+
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+</body>
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+<script>
+    new FroalaEditor('edit', {height: 60});
+</script>
+<style>
+    /*.gnb{*/
+    /*    width: 1440px;*/
+    /*    height: 55px;*/
+    /*    padding: 8px 0 0 1px;*/
+    /*    background-color: #fff;*/
+    /*}*/
+    @media (min-width: 1440px) {
+        .container {
+            width: 100vw;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 100vw;
+            max-width: none !important;
+
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .container {
+            width: 1440px;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 1440px;
+            max-width: none !important;
+
+        }
+    }
+
+    .user{
+        width: 30px;
+        height: 30px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 40px;
+        background-color: #dee2e6;
+    }
+
+    .user-sm{
+        width: 20px;
+        height: 20px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 20px;
+        background-color: #dee2e6;
+    }
+
+    .tag{
+        width: 40px;
+        max-width: 120px;
+        height: 18px;
+        border-radius: 16px;
+        background-color: #eaecef;
+    }
+
+    .ms-n5 {
+        margin-left: -40px;
+    }
+
+    .snb-lg{
+        width: 200px;
+        height: 1016px;
+    }
+
+    .snb{
+        width: 80px;
+        height: 1016px;
+    }
+    .slideout { padding: 0; margin: 0; }
+    .slideout .modal-dialog { margin-top: 0; margin-right: 0; margin-bottom: 0; min-height: 100vh; max-height: 100vh; }
+    .slideout .modal-dialog .modal-content { border-radius: 0; min-height: 100vh; max-height: 100vh; }
+
+
+</style>
+</html>

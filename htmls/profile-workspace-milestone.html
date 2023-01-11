@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>프로필 Workspace/Milestone</title>
+<!--    <link rel="stylesheet" href="../assets/scss/main.css">-->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <!--    <script type="module" src="../assets/js/main.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Create a tag that we will use as the editable area. -->
+    <!-- You can use a div tag as well. -->
+
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+    <!-- Initialize the editor. -->
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body style="background-color: #f3f4f5">
+<nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1 text-secondary position-relative" style="z-index: 10">
+    <div class="container container-fluid" >
+        <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
+        <span class="material-symbols-outlined ms-3" style="font-size: 38px">
+            apps
+        </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
+                <li class="nav-item">
+                    <a class="nav-link text-black" aria-current="page" href="./workspaces.html">
+                        Workspaces
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./milestones.html">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./experts.html">
+                        Experts
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-5 ms-auto mb-lg-0 d-flex align-content-center justify-content-center align-items-center">
+                <li class="nav-item">
+                    <div class="input-group input-group-sm">
+                        <input type="search" class="form-control border-end-0" placeholder="Search" >
+                        <label class="input-group-text" for="">
+                            <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                search
+                            </span>
+                        </label>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <!--                    -->
+                    <div class="dropdown">
+                        <a class="nav-link text-muted"  id="dropdownMenuButton2" data-mdb-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                            <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                notifications
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="width: 350px">
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img5.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Lucas
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    님이 Milestone을 제안 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "모바일 앱 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img6.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Ben.cha
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                     님이 일일 업무일지를 등록 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "와이어 프레임 작성"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img8.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Cha Jee Hyung
+                                                    </span>
+                                                <span class="small" style="font-size: smaller">
+                                                        님 권한이 관리자로 변경 되었습니다.
+                                                    </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "플랙폼 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center" href="notifications.html">
+                                    <small>
+                                        전체 보기
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./messages.html" class="nav-link text-muted">
+                        <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                            chat
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./service-center.html" class="nav-link text-muted">
+                             <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                help
+                            </span>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="" class="nav-link text-muted" id="dropdownMenuButton1" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img class="user" src="../assets/img/img6.jpg"/>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="./profile-info.html">
+                                    <small>
+                                        마이 페이지
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./settings.html">
+                                    <small>
+                                        계정 설정
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <small>
+                                        로그 아웃
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
+    <div class="container container-fluid">
+        <div class="row w-100">
+            <div class="col-4">
+            </div>
+            <div class="col-4 text-center" style="margin-top: 80px;">
+                <div class="">
+                    <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
+                </div>
+            </div>
+            <div class="col-4 text-center" style="margin-top: 60px;">
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-primary">
+                        팔로우
+                    </button>
+
+                </div>
+                <div class="btn-group btn-group-sm">
+
+                    <button class="btn btn-outline-secondary">
+                        메세지
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="navbar navbar-expand bg-white">
+    <div class="container container-fluid mb-2" style="margin-top: 40px">
+        <div class="row w-100">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <div class="d-flex align-items-center justify-content-center">
+                <span class="fw-bold">
+                    차지형
+                </span>
+                    <span class="material-icons-outlined text-muted ms-2" style="font-size: 18px;">
+                    mode_edit
+                </span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-2">
+                <span class="small">
+                    풀스택 개발자
+                </span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-1">
+                    <h6>
+                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                            #vue.js
+                        </span>
+                    </h6>
+                    <h6>
+                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                            #python
+                        </span>
+                    </h6>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-1">
+                    <span class="small">
+                       다양한 경험을 가진 웹개발자입니다.
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="main">
+    <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
+        <header>
+            <ul class="nav justify-content-center border-bottom">
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-info.html">
+                        정보
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-task-info.html">
+                        Task 통계
+                    </a>
+                </li>
+                <li class="nav-item border-bottom border-primary">
+                    <a class="nav-link text-black" href="./profile-workspace-milestone.html">
+                        Workspace/Milestone
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-followers.html">
+                        연결 친구
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-payment.html">
+                        정산/결제
+                    </a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <span class="nav-link text-muted">-->
+<!--                        게시물-->
+<!--                    </span>-->
+<!--                </li>-->
+            </ul>
+        </header>
+        <div class="mt-3">
+            <div class="card">
+                <div class="card-header bg-white">
+                    Workspace 현황
+                </div>
+                <div class="p-4 border-bottom">
+                    <h6 class="fw-bold small">
+                        My Workspace
+                    </h6>
+                    <div class="d-flex align-items-center mt-3">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center p-3">
+                                    <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                    <div class="ms-2">
+                                        <div class="small">
+                                            <a href="./workspace-dashboard.html" class="text-decoration-none text-black">
+                                                Google Cloud
+                                            </a>
+                                        </div>
+                                        <small class="text-muted">
+                                            AI 기반 음성 코치
+                                        </small>
+                                        <div class="d-flex align-items-center">
+                                <span class="badge rounded-pill badge-secondary">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 13px; margin-top: 2px">
+                                            chat
+                                        </span>
+                                        <span class="text-muted ms-1" style="font-size: 11px">
+                                            3
+                                        </span>
+                                    </div>
+                                </span>
+
+                                            <span class="badge rounded-pill badge-secondary ms-1">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                         <span class="material-icons-outlined text-muted" style="font-size: 13px; margin-top: 2px">
+                                            notifications
+                                        </span>
+                                        <span class="text-muted ms-1" style="font-size: 11px">
+                                            3
+                                        </span>
+                                    </div>
+                                </span>
+
+
+                                            <div class="d-flex align-items-center justify-content-center ms-3">
+                                                <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
+                                                <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
+                                                <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px">
+                                                <span class="text-muted ms-1" style="font-size: 11px">
+                                        +3
+                                    </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ms-3">
+                                <div class="card-body d-flex align-items-center p-3">
+                                    <img class="img-thumbnail" src="../assets/img/brands/paypal-icon.svg" style="width: 60px"/>
+                                    <div class="ms-2">
+                                        <div class="small">
+                                            <a href="./workspace-dashboard.html" class="text-decoration-none text-black">
+                                                Paypal
+                                            </a>
+                                        </div>
+                                        <small class="text-muted">
+
+                                            IoT 기기 펌웨어 개발
+                                        </small>
+                                        <div class="d-flex align-items-center">
+                                <span class="badge rounded-pill badge-secondary">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 13px; margin-top: 2px">
+                                            chat
+                                        </span>
+                                        <span class="text-muted ms-1" style="font-size: 11px">
+                                            3
+                                        </span>
+                                    </div>
+                                </span>
+
+                                            <span class="badge rounded-pill badge-secondary ms-1">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                         <span class="material-icons-outlined text-muted" style="font-size: 13px; margin-top: 2px">
+                                            notifications
+                                        </span>
+                                        <span class="text-muted ms-1" style="font-size: 11px">
+                                            3
+                                        </span>
+                                    </div>
+                                </span>
+
+
+                                            <div class="d-flex align-items-center justify-content-center ms-3">
+                                                <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
+                                                <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
+                                                <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px">
+                                                <span class="text-muted ms-1" style="font-size: 11px">
+                                        +3
+                                    </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card ms-3">
+                                <div class="card-body d-flex align-items-center p-3">
+                                    <img class="img-thumbnail" src="../assets/img/brands/shopify-icon.svg" style="width: 60px"/>
+                                    <div class="ms-2">
+                                        <div class="small">
+                                            <a href="./workspace-dashboard.html" class="text-decoration-none text-black">
+                                                Shopify
+                                            </a>
+                                        </div>
+                                        <small class="text-muted">
+
+                                            지도정보 수집 프로그램 개발
+                                        </small>
+                                        <div class="d-flex align-items-center">
+                                <span class="badge rounded-pill badge-secondary">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 13px; margin-top: 2px">
+                                            chat
+                                        </span>
+                                        <span class="text-muted ms-1" style="font-size: 11px">
+                                            3
+                                        </span>
+                                    </div>
+                                </span>
+
+                                            <span class="badge rounded-pill badge-secondary ms-1">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                         <span class="material-icons-outlined text-muted" style="font-size: 13px; margin-top: 2px">
+                                            notifications
+                                        </span>
+                                        <span class="text-muted ms-1" style="font-size: 11px">
+                                            3
+                                        </span>
+                                    </div>
+                                </span>
+
+
+                                            <div class="d-flex align-items-center justify-content-center ms-3">
+                                                <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
+                                                <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
+                                                <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px">
+                                                <span class="text-muted ms-1" style="font-size: 11px">
+                                        +3
+                                    </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="ms-3">
+                            <a class="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor:pointer;">
+                                <span class="material-icons-outlined text-muted" style="font-size: 48px">
+                                    control_point
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <h6 class="fw-bold small mb-0">
+                                    초대 Workspace
+                                </h6>
+                                <span class="badge bg-white ms-1 rounded-pill text-primary border border-primary" style="font-size: x-small">
+                                    4
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅/광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-primary btn-sm" style="font-size: smaller">
+                                                수락
+                                            </button>
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                거절
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅 광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-primary btn-sm" style="font-size: smaller">
+                                                수락
+                                            </button>
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                거절
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅/광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-primary btn-sm" style="font-size: smaller">
+                                                수락
+                                            </button>
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                거절
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <h6 class="fw-bold small mb-0">
+                                    지원 Workspace
+                                </h6>
+                                <span class="badge bg-white ms-1 rounded-pill text-primary border border-primary" style="font-size: x-small">
+                                    3
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/asana-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅/광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                지원 취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/airbnb-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅 광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                지원 취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <h6 class="fw-bold small mb-0">
+                                    좋아요 Workspace
+                                </h6>
+                                <span class="badge bg-white ms-1 rounded-pill text-primary border border-primary" style="font-size: x-small">
+                                    3
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/adobe-xd-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅/광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <img class="img-thumbnail" src="../assets/img/brands/atlassian-icon.svg" style="width: 60px"/>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <div>
+                                            <small class="text-muted" style="font-size: x-small">
+                                                개발 · 마케팅 광고
+                                            </small>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        플랫폼 화면 기획
+                                                    </span>
+                                            <span class="small ms-1" style="font-size: smaller">
+                                                        기본 와이어 프레임 설정 및 환경 세팅
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                화면 와이어프레임 제작
+                                            </small>
+                                            <span class="badge border ms-3" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Frontend
+                                            </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                Mobile
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header bg-white">
+                    Milestone 현황
+                </div>
+
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <h6 class="fw-bold small mb-0">
+                                    제안 Milestone
+                                </h6>
+                                <span class="badge bg-white ms-1 rounded-pill text-primary border border-primary" style="font-size: x-small">
+                                    4
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <!--                                        <div>-->
+                                        <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                        <!--                                                개발 · 마케팅 광고-->
+                                        <!--                                            </small>-->
+                                        <!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-primary btn-sm" style="font-size: smaller">
+                                                수락
+                                            </button>
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                거절
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+<!--                                        <div>-->
+<!--                                            <small class="text-muted" style="font-size: x-small">-->
+<!--                                                개발 · 마케팅 광고-->
+<!--                                            </small>-->
+<!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-primary btn-sm" style="font-size: smaller">
+                                                수락
+                                            </button>
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                거절
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/google-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <!--                                        <div>-->
+                                        <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                        <!--                                                개발 · 마케팅 광고-->
+                                        <!--                                            </small>-->
+                                        <!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-primary btn-sm" style="font-size: smaller">
+                                                수락
+                                            </button>
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                거절
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <h6 class="fw-bold small mb-0">
+                                    제출 Milestone
+                                </h6>
+                                <span class="badge bg-white ms-1 rounded-pill text-primary border border-primary" style="font-size: x-small">
+                                    3
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/asana-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <!--                                        <div>-->
+                                        <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                        <!--                                                개발 · 마케팅 광고-->
+                                        <!--                                            </small>-->
+                                        <!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                제출 취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/airbnb-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <!--                                        <div>-->
+                                        <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                        <!--                                                개발 · 마케팅 광고-->
+                                        <!--                                            </small>-->
+                                        <!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                제출 취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center">
+                                <h6 class="fw-bold small mb-0">
+                                    좋아요 Milestone
+                                </h6>
+                                <span class="badge bg-white ms-1 rounded-pill text-primary border border-primary" style="font-size: x-small">
+                                    3
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/adobe-xd-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <!--                                        <div>-->
+                                        <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                        <!--                                                개발 · 마케팅 광고-->
+                                        <!--                                            </small>-->
+                                        <!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="">
+                                    <div class="text-center">
+                                        <img class="img-thumbnail" src="../assets/img/brands/atlassian-icon.svg" style="width: 60px"/>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="small text-muted" style="font-size: x-small">
+                                        플랫폼 개발
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="ms-3 d-flex w-75">
+                                    <div class="me-auto">
+                                        <!--                                        <div>-->
+                                        <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                        <!--                                                개발 · 마케팅 광고-->
+                                        <!--                                            </small>-->
+                                        <!--                                        </div>-->
+                                        <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        결제 자동알림 개발
+                                                    </span>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                PG 결제 연동하여 카카오톡으로 알림 발송 기능
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                기간: 40일
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <small class="text-muted" style="font-size: smaller">
+                                                예산: 4,000,000원
+                                            </small>
+
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <small class="text-muted" style="font-size: smaller">
+                                                개발
+                                            </small>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                            <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                            </div>
+                                            <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                            <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn btn-outline-secondary ms-1 btn-sm" style="font-size: smaller">
+                                                취소
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+</body>
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+<!--<script>-->
+<!--    new FroalaEditor('textarea');-->
+<!--</script>-->
+<script>
+    Highcharts.chart('container', {
+        credits: {
+            enabled: false,
+        },
+        chart: {
+            height:260,
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: false,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                // size: 140,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Chrome',
+                y: 74.77,
+                sliced: true,
+                selected: true
+            },  {
+                name: 'Edge',
+                y: 12.82
+            },  {
+                name: 'Firefox',
+                y: 4.63
+            }, {
+                name: 'Safari',
+                y: 2.44
+            }, {
+                name: 'Internet Explorer',
+                y: 2.02
+            }, {
+                name: 'Other',
+                y: 3.28
+            }]
+        }]
+    });
+
+
+</script>
+<style>
+    /*.gnb{*/
+    /*    width: 1440px;*/
+    /*    height: 55px;*/
+    /*    padding: 8px 0 0 1px;*/
+    /*    background-color: #fff;*/
+    /*}*/
+
+    @media (min-width: 1440px) {
+        .container {
+            width: 100vw;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 100vw;
+            max-width: none !important;
+
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .container {
+            width: 1440px;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 1440px;
+            max-width: none !important;
+
+        }
+    }
+
+    .user{
+        width: 30px;
+        height: 30px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 40px;
+        background-color: #dee2e6;
+    }
+
+    .user-lg{
+        width: 80px;
+        height: 80px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 60px;
+        background-color: #dee2e6;
+    }
+
+    .user-sm{
+        width: 20px;
+        height: 20px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 20px;
+        background-color: #dee2e6;
+    }
+
+    .tag{
+        width: 40px;
+        max-width: 120px;
+        height: 18px;
+        border-radius: 16px;
+        background-color: #eaecef;
+    }
+
+    .ms-n5 {
+        margin-left: -40px;
+    }
+
+    .circle-legend{
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        background-color: #5da1e5;
+    }
+
+
+</style>
+</html>

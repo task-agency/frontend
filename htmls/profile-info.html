@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>프로필 상세정보</title>
+<!--    <link rel="stylesheet" href="../assets/scss/main.css">-->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <!--    <script type="module" src="../assets/js/main.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Create a tag that we will use as the editable area. -->
+    <!-- You can use a div tag as well. -->
+
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+    <!-- Initialize the editor. -->
+</head>
+<body style="background-color: #f3f4f5">
+<nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1 text-secondary position-relative" style="z-index: 10">
+    <div class="container container-fluid" >
+        <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
+        <span class="material-symbols-outlined ms-3" style="font-size: 38px">
+            apps
+        </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
+                <li class="nav-item">
+                    <a class="nav-link text-black" aria-current="page" href="./workspaces.html">
+                        Workspaces
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./milestones.html">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./experts.html">
+                        Experts
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-5 ms-auto mb-lg-0 d-flex align-content-center justify-content-center align-items-center">
+                <li class="nav-item">
+                    <div class="input-group input-group-sm">
+                        <input type="search" class="form-control border-end-0" placeholder="Search" >
+                        <label class="input-group-text" for="">
+                            <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                search
+                            </span>
+                        </label>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <!--                    -->
+                    <div class="dropdown">
+                        <a class="nav-link text-muted"  id="dropdownMenuButton2" data-mdb-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                            <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                notifications
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="width: 350px">
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img5.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Lucas
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    님이 Milestone을 제안 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "모바일 앱 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img6.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Ben.cha
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                     님이 일일 업무일지를 등록 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "와이어 프레임 작성"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img8.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Cha Jee Hyung
+                                                    </span>
+                                                <span class="small" style="font-size: smaller">
+                                                        님 권한이 관리자로 변경 되었습니다.
+                                                    </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "플랙폼 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center" href="notifications.html">
+                                    <small>
+                                        전체 보기
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./messages.html" class="nav-link text-muted">
+                        <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                            chat
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./service-center.html" class="nav-link text-muted">
+                             <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                help
+                            </span>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="" class="nav-link text-muted" id="dropdownMenuButton1" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img class="user" src="../assets/img/img6.jpg"/>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="./profile-info.html">
+                                    <small>
+                                        마이 페이지
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./settings.html">
+                                    <small>
+                                        계정 설정
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <small>
+                                        로그 아웃
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
+    <div class="container container-fluid">
+        <div class="row w-100">
+            <div class="col-4">
+            </div>
+            <div class="col-4 text-center" style="margin-top: 80px;">
+                <div class="">
+                    <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
+                </div>
+            </div>
+            <div class="col-4 text-center" style="margin-top: 60px;">
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-primary">
+                        팔로우
+                    </button>
+
+                </div>
+                <div class="btn-group btn-group-sm">
+
+                    <button class="btn btn-outline-secondary">
+                        메세지
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="navbar navbar-expand bg-white">
+    <div class="container container-fluid mb-2" style="margin-top: 40px">
+        <div class="row w-100">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <div class="d-flex align-items-center justify-content-center">
+                <span class="fw-bold">
+                    차지형
+                </span>
+                    <a class="ms-2" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-modal">
+                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 18px;">
+                            mode_edit
+                        </span>
+                    </a>
+
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-2">
+                    <span class="small">
+                        풀스택 개발자
+                    </span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-1">
+                    <h6>
+                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                            vue.js
+                        </span>
+                    </h6>
+                    <h6>
+                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                            python
+                        </span>
+                    </h6>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-1">
+                    <span class="small">
+                       다양한 경험을 가진 웹개발자입니다.
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="main" >
+    <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
+        <header>
+            <ul class="nav justify-content-center border-bottom">
+                <li class="nav-item border-bottom border-primary">
+                    <a class="nav-link text-black" href="./profile-info.html">
+                        정보
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-task-info.html">
+                        Task 통계
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
+                        Workspace/Milestone
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-followers.html">
+                        연결 친구
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="./profile-payment.html">
+                        정산/결제
+                    </a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <span class="nav-link text-muted">-->
+<!--                        게시물-->
+<!--                    </span>-->
+<!--                </li>-->
+            </ul>
+        </header>
+        <div class="row mt-3">
+            <div class="col-4">
+                <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-auto">
+                                        <span class="small text-muted" style="font-size: smaller">
+                                            업무 분야
+                                        </span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <a class="ms-2" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-category-modal">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="pe-2">
+                                        <span class="small">
+                                            개발
+                                        </span>
+                                    </div>
+                                    <div class="border-end" style="height: 18px">
+
+                                    </div>
+
+                                    <div class="ms-2">
+                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                            Fronend
+                                        </span>
+                                    </div>
+                                    <div class="ms-2">
+                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                           Backend
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="me-auto">
+                                        <span class="small text-muted" style="font-size: smaller">
+                                            링크
+                                        </span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <a class="ms-2" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-link-modal">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px; padding-top: 2px;">
+                                                mode_edit
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-2">
+                                    <span class="material-icons-outlined text-muted" style="font-size: 24px">
+                                        link
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-auto">
+                                        <span class="small text-muted" style="font-size: smaller">
+                                            시급 / 일평균 근무 시간
+                                        </span>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <a class="ms-2" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-hours-modal">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mt-2">
+                                    <span class="small">
+                                       30,000 원
+                                    </span>
+                                    <div class="border-end ms-2" style="height: 18px">
+
+                                    </div>
+                                    <span class="small ms-2">
+                                        8 시간
+                                    </span>
+
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-auto">
+                                        <span class="small text-muted" style="font-size: smaller">
+                                            수행 현황
+                                        </span>
+                                    </div>
+<!--                                    <div class="ms-auto">-->
+<!--                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px;">-->
+<!--                                            mode_edit-->
+<!--                                        </span>-->
+<!--                                    </div>-->
+                                </div>
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="w-100">
+                                        <div class="progress" style="height: 15px; border-radius: 5px">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <small class="" style="font-size: smaller">
+                                                    20 시간
+                                                </small>
+                                            </div>
+                                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                <small class="" style="font-size: smaller">
+                                                    200 시간
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="row p-3">
+                                        <div class="col-4 border-end text-center">
+                                            <small class="" style="font-size: smaller">
+                                                연결: 8
+                                            </small>
+
+                                        </div>
+                                        <div class="col-4 border-end text-center">
+                                            <small class="" style="font-size: smaller">
+                                                팔로윙: 8
+                                            </small>
+
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <small class="" style="font-size: smaller">
+                                                팔로워: 8
+                                            </small>
+
+                                        </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="small" style="font-size: smaller">
+                                            경력
+                                        </span>
+                                        <span class="text-muted small" style="font-size: x-small">
+                                            (7년 4개월)
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-career-modal">
+                                            <span class="material-icons-outlined text-primary" style="font-size: 14px;">
+                                                add
+                                            </span>
+                                        </a>
+
+                                        <span class="small text-primary" style="font-size: x-small">
+                                             추가
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-content-center mt-2">
+                                    <div class="me-auto">
+                                        <div class="d-flex">
+                                            <span class="mt-2" style="width: 70px; height: 70px; background-color: #d8d8d8">
+
+                                            </span>
+                                            <div class="ms-3">
+                                                <div>
+                                                    <span class="small">
+                                                        IGAWORKS
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="small text-muted">
+                                                        프론트엔드 개발
+                                                    </span>
+                                                </div>
+                                                <div class="p-0">
+                                                    <span class="small text-muted p-0" style="font-size: x-small">
+                                                        2019년 8월 ~ 현재 (3년 3개월)
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <span class="small">
+                                                        - 프론트엔드 개발 <br/>
+                                                        - 백엔드 개발
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                             <span class="material-icons-outlined text-muted" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                                close
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-content-center mt-2">
+                                <div class="me-auto">
+                                    <div class="d-flex">
+                                            <span class="mt-2" style="width: 70px; height: 70px; background-color: #d8d8d8">
+
+                                            </span>
+                                        <div class="ms-3">
+                                            <div>
+                                                    <span class="small">
+                                                        IGAWORKS
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small text-muted">
+                                                        프론트엔드 개발
+                                                    </span>
+                                            </div>
+                                            <div class="p-0">
+                                                    <span class="small text-muted p-0" style="font-size: x-small">
+                                                        2019년 8월 ~ 현재 (3년 3개월)
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small">
+                                                        - 프론트엔드 개발 <br/>
+                                                        - 백엔드 개발
+                                                    </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                                close
+                                            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-content-center mt-2">
+                                <div class="me-auto">
+                                    <div class="d-flex">
+                                            <span class="mt-2" style="width: 70px; height: 70px; background-color: #d8d8d8">
+
+                                            </span>
+                                        <div class="ms-3">
+                                            <div>
+                                                    <span class="small">
+                                                        IGAWORKS
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small text-muted">
+                                                        프론트엔드 개발
+                                                    </span>
+                                            </div>
+                                            <div class="p-0">
+                                                    <span class="small text-muted p-0" style="font-size: x-small">
+                                                        2019년 8월 ~ 현재 (3년 3개월)
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small">
+                                                        - 프론트엔드 개발 <br/>
+                                                        - 백엔드 개발
+                                                    </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+
+
+                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                                close
+                                            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="small" style="font-size: smaller">
+                                            학력
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-education-modal">
+                                            <span class="material-icons-outlined text-primary" style="font-size: 14px;">
+                                            add
+                                        </span>
+                                        </a>
+
+                                        <span class="small text-primary" style="font-size: x-small">
+                                             추가
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-content-center mt-2">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="" style="width: 70px; height: 70px; background-color: #d8d8d8">
+
+                                        </span>
+                                        <div class="ms-3">
+                                            <div>
+                                                    <span class="small">
+                                                        숭실 대학교
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small text-muted">
+                                                        정보통계 보험수리(학사)
+                                                    </span>
+                                            </div>
+                                            <div class="p-0">
+                                                    <span class="small text-muted p-0" style="font-size: x-small">
+                                                        2008년 3월 ~ 2014년 8월
+                                                    </span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                                close
+                                            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="small" style="font-size: smaller">
+                                            프로젝트
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-project-modal">
+                                            <span class="material-icons-outlined text-primary" style="font-size: 14px;">
+                                                add
+                                            </span>
+                                        </a>
+
+                                        <span class="small text-primary" style="font-size: x-small">
+                                             추가
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-content-center mt-2">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <div class="">
+                                            <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                        화주/포워더를 위한 수입/수출 모니터링 서비스
+                                                    </span>
+                                                <span class="material-icons-outlined text-primary ms-1" style="font-size: 20px">
+                                                        link
+                                                </span>
+                                            </div>
+                                            <div class="p-0">
+                                                    <span class="small text-muted p-0" style="font-size: x-small">
+                                                        2008년 3월 ~ 2014년 8월
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                <span class="small" style="font-size: smaller">
+                                                        프로젝트 설명
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small text-muted" style="font-size: smaller">
+                                                        - 화주/포워더를 위한 수입/수출 업무 효율화를 위한 모니터링 서비스
+                                                    </span>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2">
+                                                <div class="text-center">
+                                                    <img style="height: 30px; width: 30px; background-color: #d8d8d8">
+
+                                                    <div class="text">
+                                                         <span class="text-muted small" style="font-size: xx-small;">
+                                                            포르 폴리오.ppt
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="ms-1 text-center">
+                                                    <img style="height: 30px; width: 30px; background-color: #d8d8d8">
+
+                                                    </img>
+                                                    <div class="text">
+                                                         <span class="text-muted small" style="font-size: xx-small;">
+                                                            포르 폴리오2.ppt
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                                close
+                                            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="small" style="font-size: smaller">
+                                            자격증
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-certificate-modal">
+                                             <span class="material-icons-outlined text-primary" style="font-size: 14px;">
+                                                add
+                                            </span>
+                                        </a>
+
+                                        <span class="small text-primary" style="font-size: x-small">
+                                             추가
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-content-center mt-2">
+                                <div class="me-auto">
+                                    <div class="d-flex align-items-center">
+                                        <div class="">
+                                            <div>
+                                                    <span class="small">
+                                                        정보처리기사
+                                                    </span>
+                                            </div>
+                                            <div>
+                                                    <span class="small text-muted">
+                                                        한국산업인력공단
+                                                    </span>
+                                            </div>
+                                            <div class="">
+                                                    <span class="small text-muted p-0" style="font-size: x-small">
+                                                        2012년 8월
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons-outlined text-muted" style="font-size: 14px;">
+                                                mode_edit
+                                            </span>
+                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                                close
+                                            </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<div class="modal fade" id="profile-info-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="">프로필 정보</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            이름
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control"/>
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            주요 역할 분야
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control"/>
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            키워드
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-end-0" id="tag">
+                                <label class="input-group-text" for="">
+                                    <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                        search
+                                    </span>
+                                </label>
+                            </div>
+
+                            <span class="material-icons-outlined ms-2">
+                                        add
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center mt-1">
+                            <h6 class="mb-0">
+                                <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                    UI/UX x
+                                </span>
+
+                            </h6>
+                            <h6 class="mb-0 ms-2">
+                                <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                    Frontend x
+                                </span>
+
+                            </h6>
+                            <h6 class="mb-0 ms-2">
+                                <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                    Backend x
+                                </span>
+
+                            </h6>
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label text-black">
+                            자기소개
+                        </label>
+                        <textarea class="form-control"></textarea>
+                        <div>
+                            <small class="text-muted">
+                                (200 / 0)
+                            </small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-category-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">업무 분야</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">유형</label>
+
+                        <div class="d-flex align-items-center">
+                            <select name="" id="" class="form-select form-select-sm">
+                                <option value="">
+                                    개발
+                                </option>
+                            </select>
+                            <select  name="" id="" class="form-select form-select-sm ms-1">
+                                <option value="">
+                                    Frontend
+                                </option>
+                            </select>
+
+                            <span class="material-icons-outlined ms-2">
+                                        add
+                                    </span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <h6 class="mb-0">
+                                <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                    UI/UX x
+                                </span>
+
+                            </h6>
+                            <h6 class="mb-0 ms-2">
+                                <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                    Frontend x
+                                </span>
+
+                            </h6>
+                            <h6 class="mb-0 ms-2">
+                                <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                    Backend x
+                                </span>
+
+                            </h6>
+
+                        </div>
+                    </div>
+<!--                    <div class="mb-3">-->
+<!--                        <label for="recipient-name" class="col-form-label">유형 상세</label>-->
+
+
+<!--                    </div>-->
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-link-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >링크</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+<!--                        <label for="recipient-name" class="col-form-label">-->
+<!--                            링크-->
+<!--                        </label>-->
+                        <div class="d-flex align-items-center">
+                            <select name="" id="" class="form-select form-select-sm" style="width: 35%">
+                                <option value="">
+                                    Facebook
+                                </option>
+                                <option value="">
+                                    Instagram
+                                </option>
+                                <option value="">
+                                    Github
+                                </option>
+                                <option value="">
+                                    LinkedIn
+                                </option>
+                                <option value="">
+                                    Notion
+                                </option>
+                                <option value="">
+                                    Web
+                                </option>
+                            </select>
+                            <div class="input-group input-group-sm ms-1">
+                                <input type="text" class="form-control" />
+                            </div>
+
+                            <span class="material-icons-outlined ms-2">
+                                add
+                            </span>
+                        </div>
+                        <div class="p-2 mt-2">
+                                <div class="row small">
+                                    <div class="col-3">
+                                         <span class=>
+                                            Facebook
+                                        </span>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="">
+                                            https://www.facebook.com/chajee
+                                        </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button class="btn-close " aria-label="Close" style="font-size: x-small"></button>
+                                    </div>
+                                </div>
+                                <div class="row mt-1 small">
+                                    <div class="col-3">
+                                         <span class=>
+                                           Github
+                                        </span>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="">
+                                            https://www.facebook.com/chajee
+                                        </span>
+                                    </div>
+                                    <div class="col-1">
+                                        <button class="btn-close " aria-label="Close" style="font-size: x-small"></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-hours-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >시급 / 일평균 근무 시간</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="시급" />
+                            </div>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control ms-1" placeholder="일평균 근무 시간"/>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-career-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >경력</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">회사명</label>
+                        <div class="input-group">
+                            <label class="input-group-text" for="">
+                                <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                    search
+                                </span>
+                            </label>
+                            <input type="search" class="form-control border-start-0" placeholder="Search" >
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            역할
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" >
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            재직 기간
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <div class="input-group" style="width: 37% !important;">
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <span class="ms-2">
+                                ~
+                            </span>
+                            <div class="input-group ms-2" style="width: 37% !important;">
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <div class="form-check form-check-inline ms-1">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label small" for="flexCheckDefault" >재직중</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label text-black">
+                            설명
+                        </label>
+                        <textarea class="form-control"></textarea>
+                        <div>
+                            <small class="text-muted">
+                                (200 / 0)
+                            </small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-education-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >학력</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                           학교
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <select name="" id="" class="form-select w-25" style="font-size: smaller">
+                                <option value="">구분</option>
+                                <option value="">고등학교</option>
+                                <option value="">대학</option>
+                                <option value="">대학원</option>
+                            </select>
+                            <div class="input-group ms-1">
+                                <label class="input-group-text" for="">
+                                    <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                        search
+                                    </span>
+                                </label>
+                                <input type="search" class="form-control border-start-0" placeholder="Search" >
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            전공
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <div class="input-group">
+                                <label class="input-group-text" for="">
+                                <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                    search
+                                </span>
+                                </label>
+                                <input type="search" class="form-control border-start-0" placeholder="Search" >
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            재학 기간
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <div class="input-group" style="width: 37% !important;">
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <span class="ms-2">
+                                    ~
+                            </span>
+                            <div class="input-group ms-2" style="width: 37% !important;">
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <div class="form-check form-check-inline ms-1">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label small" for="flexCheckDefault" >재학중</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-project-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >프로젝트</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            프로젝트명
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            링크
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            기간
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <div class="input-group" style="width: 37% !important;">
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <span class="ms-2">
+                                    ~
+                            </span>
+                            <div class="input-group ms-2" style="width: 37% !important;">
+                                <input type="text" class="form-control" >
+                            </div>
+
+                            <div class="form-check form-check-inline ms-1">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label class="form-check-label small" for="flexCheckDefault" >진행중</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 align-items-center d-flex">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            파일 업로드
+                        </label>
+                        <button class="btn btn-outline-secondary btn-sm ms-2" style="font-size: x-small">
+                            파일 선택
+                        </button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label text-black">
+                            설명
+                        </label>
+                        <textarea class="form-control"></textarea>
+                        <div>
+                            <small class="text-muted">
+                                (200 / 0)
+                            </small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="profile-info-certificate-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >자격증</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            자격증
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            발급기관
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label text-black">
+                            취득 일자
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary btn-sm" data-mdb-dismiss="modal">
+                    닫기
+                </button>
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+<!--<script>-->
+<!--    new FroalaEditor('textarea');-->
+<!--</script>-->
+<style>
+    @media (min-width: 1440px) {
+        .container {
+            width: 100vw;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 100vw;
+            max-width: none !important;
+
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .container {
+            width: 1440px;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 1440px;
+            max-width: none !important;
+
+        }
+    }
+
+    /*.gnb{*/
+    /*    width: 1440px;*/
+    /*    height: 55px;*/
+    /*    padding: 8px 0 0 1px;*/
+    /*    background-color: #fff;*/
+    /*}*/
+
+    .user{
+        width: 30px;
+        height: 30px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 40px;
+        background-color: #dee2e6;
+    }
+
+    .user-lg{
+        width: 80px;
+        height: 80px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 60px;
+        background-color: #dee2e6;
+    }
+
+    .user-sm{
+        width: 20px;
+        height: 20px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 20px;
+        background-color: #dee2e6;
+    }
+
+    .tag{
+        width: 40px;
+        max-width: 120px;
+        height: 18px;
+        border-radius: 16px;
+        background-color: #eaecef;
+    }
+
+    .ms-n5 {
+        margin-left: -40px;
+    }
+
+
+</style>
+</html>

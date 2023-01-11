@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>워크스패이스 대시보드</title>
+<!--    <link rel="stylesheet" href="../assets/scss/main.css">-->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <!--    <script type="module" src="../assets/js/main.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Create a tag that we will use as the editable area. -->
+    <!-- You can use a div tag as well. -->
+
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+    <!-- Initialize the editor. -->
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body style="background-color: #f3f4f5">
+<nav class="navbar navbar-expand-lg bg-white border-bottom pt-1 pb-1">
+    <div class="container container-fluid">
+        <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
+        <span class="material-symbols-outlined ms-3 text-secondary" style="font-size: 38px">
+            apps
+            </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
+                <li class="nav-item">
+                    <a class="nav-link active text-primary" aria-current="page" href="./workspaces.html">
+                        Workspaces
+                    </a>
+                    <div class="border-bottom border-top w-100 border-primary">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./milestones.html">Milestones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="./experts.html">
+                        Experts
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-5 ms-auto mb-lg-0 d-flex align-content-center justify-content-center align-items-center">
+                <li class="nav-item">
+                    <div class="input-group input-group-sm">
+                        <input type="search" class="form-control border-end-0" placeholder="Search" >
+                        <label class="input-group-text" for="">
+                            <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                search
+                            </span>
+                        </label>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <!--                    -->
+                    <div class="dropdown">
+                        <a class="nav-link text-muted"  id="dropdownMenuButton2" data-mdb-toggle="dropdown" aria-expanded="false" style="cursor: pointer">
+                            <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                notifications
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="width: 350px">
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img5.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Lucas
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    님이 Milestone을 제안 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "모바일 앱 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img6.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Ben.cha
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                     님이 일일 업무일지를 등록 하였습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "와이어 프레임 작성"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="pe-3 ps-3 pt-2 pb-2">
+                                    <div class="align-items-center d-flex">
+                                        <img class="rounded-circle" style="width: 30px; height: 30px" src="../assets/img/img8.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Cha Jee Hyung
+                                                    </span>
+                                                <span class="small" style="font-size: smaller">
+                                                        님 권한이 관리자로 변경 되었습니다.
+                                                    </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="small" style="">
+                                                    "플랙폼 개발"
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center" href="notifications.html">
+                                    <small>
+                                        전체 보기
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./messages.html" class="nav-link text-muted">
+                        <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                            chat
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./service-center.html" class="nav-link text-muted">
+                             <span class="material-icons-outlined mt-2" style="font-size: 22px">
+                                help
+                            </span>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="" class="nav-link text-muted" id="dropdownMenuButton1" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <img class="user" src="../assets/img/img6.jpg"/>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="./profile-info.html">
+                                    <small>
+                                        마이 페이지
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./settings.html">
+                                    <small>
+                                        계정 설정
+                                    </small>
+
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <small>
+                                        로그 아웃
+                                    </small>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<main class="main d-flex">
+<!--    <nav class="snb border">-->
+<!--        <div class="position-sticky mt-2">-->
+<!--            <div href="/" class="p-2 text-center">-->
+<!--                <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">-->
+<!--                <div class="w-100 border-bottom mt-3">-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-center text-primary" href="./workspace-dashboard.html">-->
+<!--                        <span class="material-icons-outlined">-->
+<!--                            dashboard-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="./workspace-task-kaban.html" class="nav-link text-center text-muted">-->
+<!--                       <span class="material-icons-outlined">-->
+<!--                        check_circle-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="./workspace-milestones.html" class="nav-link text-center text-muted">-->
+<!--                        <span class="material-icons-outlined">-->
+<!--                        view_timeline-->
+<!--                    </span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item" href="">-->
+<!--                    <a href="./workspace-channels.html" class="nav-link text-center text-muted">-->
+<!--                       <span class="material-icons-outlined">-->
+<!--                        question_answer-->
+<!--                        </span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item" href="" >-->
+<!--                    <a href="./workspace-members.html" class="nav-link text-center text-muted">-->
+<!--                        <span class="material-icons-outlined">-->
+<!--                            people-->
+<!--                    </span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-item" href="" >-->
+<!--                    <a href="./workspace-setting.html" class="nav-link text-center text-muted">-->
+<!--                        <span class="material-icons-outlined">-->
+<!--                        settings-->
+<!--                    </span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+    <nav class="snb-lg border">
+        <div class="position-sticky mt-2">
+            <!--            <div class="d-flex align-items-center">-->
+            <!--                <div class="ms-auto">-->
+            <!--                    <span class="material-icons-outlined">-->
+            <!--                    west-->
+            <!--                    </span>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <div href="/" class="pe-3 ps-3 pb-3 pt-3 text-center">
+                <div class="d-flex align-items-center">
+                    <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">
+                    <div class="d-flex align-items-center w-100">
+                        <span class="small ms-3">
+                            플랫폼 개발
+                        </span>
+                        <span class="material-icons-outlined ms-1 " style="font-size: 18px">
+                            expand_more
+                        </span>
+                    </div>
+                    <!--                    <select name="" id="" class="form-select-sm form-select ms-1" style="font-size: 13px">-->
+                    <!--                        <option value="">-->
+                    <!--                            플랫폼 개발-->
+                    <!--                        </option>-->
+                    <!--                    </select>-->
+                </div>
+                <div class="w-100 border-bottom mt-3">
+                </div>
+            </div>
+            <ul class="nav nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="./workspace-dashboard.html">
+                        <div class="d-flex align-items-center">
+                            <span class="material-icons-outlined">
+                                dashboard
+                            </span>
+                            <span class="ms-3 small">
+                                Dashboard
+                            </span>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./workspace-task-kaban.html" class="nav-link text-center">
+                        <div class="align-items-center d-flex">
+                            <span class="material-icons-outlined text-muted">
+                            check_circle
+                            </span>
+                            <span class="ms-3 text-black small">
+                                Task
+                            </span>
+                        </div>
+
+                    </a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a href="./workspace-milestones.html" class="nav-link text-center">-->
+<!--                        <div class="d-flex align-items-center">-->
+<!--                             <span class="material-icons-outlined text-muted">-->
+<!--                                view_timeline-->
+<!--                            </span>-->
+<!--                            <span class="ms-3 small text-black">-->
+<!--                                Milestone-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+                <li class="nav-item" href="">
+                    <a href="./workspace-channels.html" class="nav-link text-center">
+                        <div class="d-flex align-items-center">
+                            <span class="material-icons-outlined text-muted text-muted">
+                            question_answer
+                            </span>
+                            <span class="ms-3 text-black small">
+                                Channels
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" href="" >
+                    <a href="./workspace-members.html" class="nav-link text-center">
+                        <div class="d-flex align-items-center">
+                             <span class="material-icons-outlined text-muted">
+                                    people
+                            </span>
+                            <span class="ms-3 text-black small">
+                                Members
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" href="" >
+                    <a href="./workspace-setting.html" class="nav-link text-center">
+
+                        <div class="align-items-center d-flex">
+                            <span class="material-icons-outlined text-muted">
+                                settings
+                            </span>
+                            <span class="ms-3 text-black small">
+                                Setting
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container container-fluid">
+        <div class="mt-3 d-flex align-items-center">
+            <div class="me-auto">
+                <small class="text-muted" style="font-size: smaller">
+                    Workspace / 플랫폼 개발 / Dashboard
+                </small>
+                <h4 class="mb-0 mt-1">
+                    Dashboard
+                </h4>
+            </div>
+            <div class="ms-auto d-flex align-items-center">
+                <div class="d-flex align-items-center justify-content-center ms-3 mt-4">
+                    <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
+                    <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
+                    <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px;">
+                    <span class="text-muted ms-1" style="font-size: 11px">
+                                        +3
+                                    </span>
+                    <a class="ms-2" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#invite-user">
+                        <span class="material-icons-outlined text-muted mt-1" style="font-size: 18px">
+                               person_add
+                        </span>
+                    </a>
+
+                    <div class="input-group input-group-sm ms-3">
+                        <input type="search" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header bg-white">
+                            Task
+                        </div>
+                        <div class="card-body p-0 overflow-auto" style="max-height: 300px;">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <span class="ps-2">
+                                                Task
+                                            </span>
+                                        </th>
+                                        <th scope="col">유형</th>
+                                        <th scope="col" class="">수행일수</th>
+                                        <!--                                    <th scope="col">일평균 시간</th>-->
+<!--                                        <th scope="col">총금액</th>-->
+                                        <th scope="col">상태</th>
+                                        <th scope="col">담당자</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="ps-2">
+                                                    <div class="" >
+                                                        화면 기획
+                                                    </div>
+                                                    <div class="text-muted" style="font-size: x-small">
+                                                        화면 와이어프레임 제작
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                                <div class="" >
+                                                    개발
+                                                </div>
+                                                <div class="text-muted" style="font-size: x-small">
+                                                    UI/UX
+                                                </div>
+
+                                            </td>
+                                            <td class="align-middle">
+                                                <div>
+                                                  <span>
+                                                    20 일
+                                                </span>
+                                                </div>
+                                                <div>
+                                                    <small class="text-danger" style="font-size: x-small">
+                                                        (D - 10)
+                                                    </small>
+                                                </div>
+
+                                            </td>
+                                            <!--                                    <td class="align-middle">-->
+                                            <!--                                        <span>-->
+                                            <!--                                            8 시간-->
+                                            <!--                                        </span>-->
+                                            <!--                                    </td>-->
+<!--                                            <td class="align-middle">-->
+<!--                                            <span>-->
+<!--                                                3,000,000 원-->
+<!--                                            </span>-->
+<!--                                            </td>-->
+                                            <td class="align-middle">
+                                                <h6 class="mb-0">
+                                                <span class="badge bg-info">
+                                                    진행중
+                                                </span>
+                                                </h6>
+                                            </td>
+                                            <td class="align-middle">
+                                            <span class="pe-2">
+                                                <img class="user-sm" src="../assets/img/img5.jpg" alt="">
+                                            </span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="ps-2">
+                                                    <div class="" >
+                                                        화면 기획
+                                                    </div>
+                                                    <div class="text-muted" style="font-size: x-small">
+                                                        화면 와이어프레임 제작
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                                <div class="" >
+                                                    개발
+                                                </div>
+                                                <div class="text-muted" style="font-size: x-small">
+                                                    Backend
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                            <span>
+                                                20 일
+                                            </span>
+                                            </td>
+                                            <!--                                            <td class="align-middle">-->
+                                            <!--                                        <span>-->
+                                            <!--                                            8 시간-->
+                                            <!--                                        </span>-->
+                                            <!--                                            </td>-->
+    <!--                                        <td class="align-middle">-->
+    <!--                                        <span>-->
+    <!--                                            3,000,000 원-->
+    <!--                                        </span>-->
+    <!--                                        </td>-->
+                                            <td class="align-middle">
+                                                <h6 class="mb-0"><span class="badge bg-success">완료</span></h6>
+                                            </td>
+                                            <td class="align-middle">
+                                                <span class="pe-2">
+                                                    <img class="user-sm" src="../assets/img/img6.jpg" alt="">
+                                                </span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="ps-2">
+                                                    <div class="" >
+                                                        화면 기획
+                                                    </div>
+                                                    <div class="text-muted" style="font-size: x-small">
+                                                        화면 와이어프레임 제작
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                                <div class="" >
+                                                    개발
+                                                </div>
+                                                <div class="text-muted" style="font-size: x-small">
+                                                    Mobile
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                        <span>
+                                            20 일
+                                        </span>
+                                            </td>
+                                            <!--                                        <td class="align-middle">-->
+                                            <!--                                    <span>-->
+                                            <!--                                        8 시간-->
+                                            <!--                                    </span>-->
+                                            <!--                                        </td>-->
+    <!--                                        <td class="align-middle">-->
+    <!--                                    <span>-->
+    <!--                                        3,000,000 원-->
+    <!--                                    </span>-->
+    <!--                                        </td>-->
+                                            <td class="align-middle">
+                                                <h6 class="mb-0">
+                                                    <span class="badge bg-warning">
+                                                        중단
+                                                    </span>
+                                                </h6>
+                                            </td>
+                                            <td class="align-middle">
+                                                <span class="pe-2">
+                                                    <img class="user-sm" src="../assets/img/img5.jpg" alt="">
+                                                </span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">
+                                                <div class="ps-2">
+                                                    <div class="" >
+                                                        화면 기획
+                                                    </div>
+                                                    <div class="text-muted" style="font-size: x-small">
+                                                        화면 와이어프레임 제작
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                                <div class="" >
+                                                    개발
+                                                </div>
+                                                <div class="text-muted" style="font-size: x-small">
+                                                    Frontend
+                                                </div>
+                                            </td>
+                                            <td class="align-middle">
+                                        <span>
+                                            20 일
+                                        </span>
+                                            </td>
+                                            <!--                                        <td class="align-middle">-->
+                                            <!--                                    <span>-->
+                                            <!--                                        8 시간-->
+                                            <!--                                    </span>-->
+                                            <!--                                        </td>-->
+    <!--                                        <td class="align-middle">-->
+    <!--                                    <span>-->
+    <!--                                        3,000,000 원-->
+    <!--                                    </span>-->
+    <!--                                        </td>-->
+                                            <td class="align-middle">
+                                                <h6 class="mb-0">
+                                                    <span class="badge bg-danger">
+                                                        취소
+                                                    </span>
+                                                </h6>
+                                            </td>
+                                            <td class="align-middle">
+                                                <span class="pe-2">
+                                                    <img class="user-sm" src="../assets/img/img5.jpg" alt="">
+                                                </span>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header bg-white">
+                            알림
+                        </div>
+                        <div class="card-body overflow-auto" style="max-height: 300px;">
+                            <div>
+                                <h6 class="small text-muted" style="font-size: x-small">
+                                    2022-11-01
+                                </h6>
+                                <div>
+                                    <div class="align-content-center d-flex mt-2">
+                                            <img class="user-sm" src="../assets/img/img5.jpg"/>
+                                            <div class="ms-2">
+                                                <span class="small fw-bold">
+                                                    Cha Jee Hyung
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    님이 Workspace 모집에 지원 했습니다.
+                                                </span>
+                                            <span class="text-muted d-flex" style="font-size: x-small">
+                                                3일전
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="align-content-center d-flex mt-2">
+                                        <img class="user-sm" src="../assets/img/img7.jpg"/>
+                                        <div class="ms-2">
+                                             <span class="small fw-bold">
+                                                   Ben.cha
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                   님이 Workspace에 합류 하였습니다.
+                                                </span>
+                                                <span class="text-muted d-flex" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+
+                                        </div>
+                                    </div>
+                                    <div class="align-content-center d-flex mt-2">
+                                        <img class="user-sm" src="../assets/img/img7.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                <span class="small fw-bold">
+                                                   Ben.cha
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                   님이 채널에서
+                                                </span>
+                                                <span class="small fw-bold ms-1">
+                                                    Cha Jee Hyung
+                                                </span>
+                                                    <span class="small" style="font-size: smaller">
+                                                       님을 언급 하였습니다.
+                                                </span>
+
+                                            </div>
+                                            <div class="d-flex align-items-center">
+
+                                                <span class="small" style="font-size: smaller">
+                                                  "업무 일지 작성 요청 드립니다."
+                                                </span>
+
+
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <h6 class="small text-muted" style="font-size: x-small">
+                                    2022-10-31
+                                </h6>
+                                <div class="">
+                                    <div class="align-content-center d-flex mt-2">
+                                        <img class="user-sm" src="../assets/img/img6.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="d-flex align-items-center">
+                                                 <span class="small fw-bold">
+                                                    Cha Jee Hyung
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    님 권한이
+                                                </span>
+                                                <span class="small fw-bold ms-1">
+                                                    관리자
+                                                </span>
+                                                <span class="small" style="font-size: smaller">
+                                                    로 변경 되었습니다.
+                                                </span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-muted" style="font-size: x-small">
+                                                    3일전
+                                                </span>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="align-content-center d-flex mt-2">
+                                        <img class="user-sm" src="../assets/img/img3.jpg"/>
+                                        <div class="ms-2">
+                                                <span class="small" style="font-size: smaller">
+                                               와이어 프레임 Task   일일 업무일지 등록
+                                            </span>
+                                            <span class="text-muted d-flex" style="font-size: x-small">
+                                                3일전
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header bg-white">
+                            멤버 현황
+                        </div>
+                        <div class="card-body p-0 overflow-auto" style="max-height: 300px;">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            <span class="ps-2">
+                                                멤버
+                                            </span>
+                                        </th>
+                                        <th scope="col">수행 Task</th>
+                                        <th scope="col">수행 시간</th>
+                                        <th scope="col">수행 금액</th>
+                                        <th scope="col" class="w-25">수행 현황</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="align-middle">
+                                            <div class="ps-2">
+                                                <img class="user-sm" src="../assets/img/img5.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                                <span>
+                                                    2 Task
+                                                </span>
+
+                                        </td>
+                                        <td class="align-middle">
+                                            <span>
+                                                30 시간
+                                            </span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span>
+                                                200,000 원
+                                            </span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <small class="" style="font-size: x-small">
+                                                60 시간
+                                            </small>
+                                            <div class="progress" style="height: 6px; border-radius: 3px">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                                <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #e9ecef; color: black" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">
+                                            <div class="ps-2">
+                                                <img class="user-sm" src="../assets/img/img3.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span>
+                                                2 Task
+                                            </span>
+
+                                        </td>
+                                        <td class="align-middle">
+                                        <span>
+                                            30 시간
+                                        </span>
+                                        </td>
+                                        <td class="align-middle">
+                                        <span>
+                                            200,000 원
+                                        </span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <small class="" style="font-size: x-small">
+                                                30 시간
+                                            </small>
+                                            <div class="progress" style="height: 6px; border-radius: 3px">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                                <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #e9ecef; color: black" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">
+                                            <div class="ps-2">
+                                                <img class="user-sm" src="../assets/img/img4.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span>
+                                                2 Task
+                                            </span>
+
+                                        </td>
+                                        <td class="align-middle">
+                                        <span>
+                                            30 시간
+                                        </span>
+                                        </td>
+                                        <td class="align-middle">
+                                        <span>
+                                            200,000 원
+                                        </span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <small class="" style="font-size: x-small">
+                                                30 시간
+                                            </small>
+                                            <div class="progress" style="height: 6px; border-radius: 3px">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">
+                                            <div class="ps-2">
+                                                <img class="user-sm" src="../assets/img/img7.jpg" alt="">
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span>
+                                                2 Task
+                                            </span>
+
+                                        </td>
+                                        <td class="align-middle">
+                                        <span>
+                                            30 시간
+                                        </span>
+                                        </td>
+                                        <td class="align-middle">
+                                        <span>
+                                            200,000 원
+                                        </span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <small class="" style="font-size: x-small">
+                                                80 시간
+                                            </small>
+                                            <div class="progress" style="height: 6px; border-radius: 3px">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                                <div class="progress-bar" role="progressbar" style="width: 20%; background-color: #e9ecef; color: black" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header bg-white">
+                            정산 현황
+                        </div>
+                        <div class="card-body overflow-auto" style="max-height: 300px;">
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center w-75">
+                                    <select name="" id="" class="form-select form-select-sm w-25">
+                                        <option value="">
+                                            전체
+                                        </option>
+                                        <option value="">
+                                            내정산
+                                        </option>
+                                    </select>
+                                    <div class="input-group input-group-sm ms-1" style="width: 120px">
+                                        <input type="date" class="form-control" value="2022-12-01">
+                                    </div>
+                                    <div class="btn-group btn-group-sm ms-1">
+                                        <button class="btn btn-outline-secondary" style="font-size: x-small">
+                                            상세보기
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-6">
+                                        <figure class="highcharts-figure">
+                                            <div id="container"></div>
+                                        </figure>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <div class="align-items-center d-flex">
+                                                <span class="circle-legend">
+
+                                                </span>
+                                                <img class="user-sm ms-2" src="../assets/img/img7.jpg"/>
+                                                <div class="ms-2">
+                                                <span class="small" style="font-size: smaller">
+                                                  2 Task / 23 시간 / 42,000 원
+                                                </span>
+
+                                                </div>
+                                            </div>
+                                            <div class="align-items-center d-flex mt-3">
+                                                <span class="circle-legend" style="background-color: #2b4055">
+
+                                                </span>
+                                                <img class="user-sm ms-2" src="../assets/img/img5.jpg"/>
+                                                <div class="ms-2">
+                                                <span class="small" style="font-size: smaller">
+                                                  3 Task / 43 시간 / 142,000 원
+                                                </span>
+
+                                                </div>
+                                            </div>
+                                            <div class="align-items-center d-flex mt-3">
+                                                <span class="circle-legend" style="background-color: #0fa88e;">
+
+                                                </span>
+                                                <img class="user-sm ms-2" src="../assets/img/img4.jpg"/>
+                                                <div class="ms-2">
+                                                <span class="small" style="font-size: smaller">
+                                                  5 Task / 123 시간 / 542,000 원
+                                                </span>
+
+                                                </div>
+                                            </div>
+                                            <div class="align-items-center d-flex mt-3">
+                                                <span class="circle-legend" style="background-color: #1a1e21">
+
+                                                </span>
+                                                <img class="user-sm ms-2" src="../assets/img/img8.jpg"/>
+                                                <div class="ms-2">
+                                                <span class="small" style="font-size: smaller">
+                                                  2 Task / 63 시간 / 442,000 원
+                                                </span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="mt-3 text-center">
+                                    <h6 class="mb-0 text-muted">
+                                        Total : 46 Task / 169 시간 / 21,126,000 원 (예정)
+                                    </h6>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<div class="modal fade" id="invite-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inviteUserModalLabel">
+                    Workspace 초대
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="">
+                    <div class="mb-2 input-group input-group-sm ps-3 pe-3 pt-3">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="사용자 검색">
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center border-bottom ps-3 pe-3">
+                            <label for="message-text" class="me-auto col-form-label small text-muted" style="font-size: smaller">
+                                사용자 목록
+                            </label>
+                            <div class="ms-auto d-flex align-items-center">
+                                <!--                                <span class="material-icons-outlined text-muted" style="font-size: 16px">-->
+                                <!--                                    more_horiz-->
+                                <!--                                </span>-->
+                                <!--                                <span class="material-icons-outlined ms-1 text-muted" style="font-size: 16px">-->
+                                <!--                                    add-->
+                                <!--                                </span>-->
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center p-2 border-bottom">
+                                <div class="me-auto">
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img7.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="small" style="font-size: smaller">
+                                                Kevin Who
+                                            </div>
+                                            <div class="text-muted" style="font-size: smaller">
+                                                kevin@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center p-2 border-bottom">
+                                <div class="me-auto">
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img3.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="small" style="font-size: smaller">
+                                                Thor
+                                            </div>
+                                            <div class="text-muted" style="font-size: smaller">
+                                                thor@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center p-2 border-bottom">
+                                <div class="me-auto">
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img4.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="small" style="font-size: smaller">
+                                                Amelia
+                                            </div>
+                                            <div class="text-muted" style="font-size: smaller">
+                                                amelia@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <!--                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">-->
+                <!--                    Close-->
+                <!--                </button>-->
+                <button type="button" class="btn btn-primary btn-sm">
+                    Workspace 초대
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+>
+</script>
+<script>
+    new FroalaEditor('edit', {height: 60});
+</script>
+<script>
+    Highcharts.chart('container', {
+        credits: {
+            enabled: false,
+        },
+        chart: {
+            height:150,
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: false,
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                size: 140,
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Chrome',
+                y: 74.77,
+                sliced: true,
+                selected: true
+            },  {
+                name: 'Edge',
+                y: 12.82
+            },  {
+                name: 'Firefox',
+                y: 4.63
+            }, {
+                name: 'Safari',
+                y: 2.44
+            }, {
+                name: 'Internet Explorer',
+                y: 2.02
+            }, {
+                name: 'Other',
+                y: 3.28
+            }]
+        }]
+    });
+
+
+</script>
+<style>
+    /*.gnb{*/
+    /*    width: 1440px;*/
+    /*    height: 55px;*/
+    /*    padding: 8px 0 0 1px;*/
+    /*    background-color: #fff;*/
+    /*}*/
+
+    @media (min-width: 1440px) {
+        .container {
+            width: 100vw;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 100vw;
+            max-width: none !important;
+
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .container {
+            width: 1440px;
+            max-width: none !important;
+        }
+
+        .navbar {
+            width: 1440px;
+            max-width: none !important;
+
+        }
+    }
+
+    .user{
+        width:30px;
+        height: 30px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 40px;
+        background-color: #dee2e6;
+    }
+
+    .user-sm{
+        width: 25px;
+        height: 25px;
+        /*margin: 4px 176px 11px 744px;*/
+        border-radius: 20px;
+        background-color: #dee2e6;
+    }
+
+    .tag{
+        width: 40px;
+        max-width: 120px;
+        height: 18px;
+        border-radius: 16px;
+        background-color: #eaecef;
+    }
+
+    .ms-n5 {
+        margin-left: -40px;
+    }
+
+    .snb-lg{
+        width: 230px;
+        height: 100vh;
+    }
+
+    .snb{
+        width: 80px;
+        height: 100vh;
+    }
+    .slideout { padding: 0; margin: 0; }
+    .slideout .modal-dialog { margin-top: 0; margin-right: 0; margin-bottom: 0; min-height: 100vh; max-height: 100vh; }
+    .slideout .modal-dialog .modal-content { border-radius: 0; min-height: 100vh; max-height: 100vh; }
+
+    .circle-legend{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        background-color: #5da1e5;
+    }
+
+
+</style>
+</html>
