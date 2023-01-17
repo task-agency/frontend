@@ -38,7 +38,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js" integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
+<body class="overflow-hidden">
 <nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1">
     <div class="container-fluid" >
         <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
@@ -241,7 +241,7 @@
         </div>
     </div>
 </nav>
-<main class="main d-flex">
+<main class="main d-flex overflow-auto" style="max-height: 100vh">
 <!--    <nav class="snb border">-->
 <!--        <div class="position-sticky mt-2">-->
 <!--            <div href="/" class="p-2 text-center">-->
@@ -410,7 +410,7 @@
                     Workspace / 플랫폼 개발
                 </small>
                 <h4 class="mb-0 mt-1">
-                    Calender
+                    Calendar
                 </h4>
             </div>
             <div class="ms-auto d-flex align-items-center">

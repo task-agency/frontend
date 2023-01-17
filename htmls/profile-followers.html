@@ -37,7 +37,7 @@
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
-<body>
+<body class="overflow-hidden">
 <nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1 text-secondary position-relative" style="z-index: 10">
     <div class="container-fluid" >
         <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
@@ -238,1064 +238,1068 @@
         </div>
     </div>
 </nav>
-<div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
-    <div class="container container-fluid">
-        <div class="row w-100">
-            <div class="col-4">
-            </div>
-            <div class="col-4 text-center" style="margin-top: 80px;">
-                <div class="">
-                    <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
+
+<div class="overflow-auto" style="max-height: 100vh">
+    <div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
+        <div class="container container-fluid">
+            <div class="row w-100">
+                <div class="col-4">
                 </div>
-            </div>
-            <div class="col-4 text-center" style="margin-top: 60px;">
-                <div class="btn-group btn-group-sm">
-                    <button class="btn btn-primary">
-                        팔로우
-                    </button>
+                <div class="col-4 text-center" style="margin-top: 80px;">
+                    <div class="">
+                        <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
+                    </div>
+                </div>
+                <div class="col-4 text-center" style="margin-top: 60px;">
+                    <div class="btn-group btn-group-sm">
+                        <button class="btn btn-primary">
+                            팔로우
+                        </button>
+
+                    </div>
+                    <div class="btn-group btn-group-sm">
+
+                        <button class="btn btn-outline-secondary">
+                            메세지
+                        </button>
+                    </div>
+
 
                 </div>
-                <div class="btn-group btn-group-sm">
-
-                    <button class="btn btn-outline-secondary">
-                        메세지
-                    </button>
-                </div>
-
-
             </div>
         </div>
+
     </div>
+    <div class="navbar navbar-expand bg-white">
+        <div class="container container-fluid mb-2" style="margin-top: 40px">
+            <div class="row w-100">
+                <div class="col-4">
 
-</div>
-<div class="navbar navbar-expand bg-white">
-    <div class="container container-fluid mb-2" style="margin-top: 40px">
-        <div class="row w-100">
-            <div class="col-4">
-
-            </div>
-            <div class="col-4">
-                <div class="d-flex align-items-center justify-content-center">
+                </div>
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-center">
                 <span class="fw-bold">
                     차지형
                 </span>
-                    <span class="material-icons-outlined text-muted ms-2" style="font-size: 18px;">
+                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 18px;">
                     mode_edit
                 </span>
-                </div>
-                <div class="d-flex align-items-center justify-content-center mt-2">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
                 <span class="small">
                     풀스택 개발자
                 </span>
-                </div>
-                <div class="d-flex align-items-center justify-content-center mt-1">
-                    <h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-1">
+                        <h6>
                         <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
                             #vue.js
                         </span>
-                    </h6>
-                    <h6>
+                        </h6>
+                        <h6>
                         <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
                             #python
                         </span>
-                    </h6>
-                </div>
-                <div class="d-flex align-items-center justify-content-center mt-1">
+                        </h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-1">
                     <span class="small">
                        다양한 경험을 가진 웹개발자입니다.
                     </span>
-                </div>
-
-            </div>
-            <div class="col-4">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<main class="main">
-    <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
-        <header>
-            <ul class="nav justify-content-center border-bottom">
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-info.html">
-                        정보
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-task-info.html">
-                        Task 통계
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
-                        Workspace/Milestone
-                    </a>
-                </li>
-                <li class="nav-item border-bottom border-primary">
-                    <a class="nav-link text-black" href="./profile-followers.html">
-                        연결 친구
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-payment.html">
-                        정산/결제
-                    </a>
-                </li>
-<!--                <li class="nav-item">-->
-<!--                    <span class="nav-link text-muted">-->
-<!--                        게시물-->
-<!--                    </span>-->
-<!--                </li>-->
-            </ul>
-        </header>
-        <div class="mt-3">
-            <div class="card">
-                <div class="card-header bg-white">
-                    연결 친구
-                </div>
-
-                <div class="card-body">
-                    <ul class="nav nav-tabs border-bottom">
-                        <li class="nav-item">
-                            <a class="nav-link active text-black" aria-current="page" id="followers-tab"
-                               data-bs-toggle="tab" data-bs-target="#followers" type="button" role="tab" aria-controls="reply" aria-selected="true">
-                                팔로워
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" id="followings-tab"
-                               data-bs-toggle="tab" data-bs-target="#followings" type="button" role="tab" aria-controls="reply" aria-selected="true">
-                                팔로잉
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" id="confirm-followers-tab"
-                               data-bs-toggle="tab" data-bs-target="#confirm-followers" type="button" role="tab" aria-controls="reply" aria-selected="true">
-                                연결 신청 관리
-                            </a>
-                        </li>
-
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="followers" role="tabpanel" aria-labelledby="followers-tab">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img4.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
-                                                        메세지
-                                                    </button>
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        삭제
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img6.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
-                                                        메세지
-                                                    </button>
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        삭제
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img5.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
-                                                        메세지
-                                                    </button>
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        삭제
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" id="followings" role="tabpanel" aria-labelledby="followings-tab">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img4.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
-                                                        메세지
-                                                    </button>
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        언팔로우
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img6.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
-                                                        메세지
-                                                    </button>
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        언팔로우
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img5.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
-                                                        메세지
-                                                    </button>
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        언팔로우
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="tab-pane" id="confirm-followers" role="tabpanel" aria-labelledby="confirm-followers-tab">
-                            <div class="pt-3 ps-3">
-                                <h6 class="fw-bold mb-0">
-                                    보낸 신청 관리
-                                </h6>
-
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img4.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        취소
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img6.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        취소
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img5.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-
-                                                    <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
-                                                        취소
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="pt-3 ps-3">
-                                <h6 class="fw-bold mb-0">
-                                    받은 신청 관리
-                                </h6>
-
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img4.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-primary btn-sm" style="font-size: smaller">
-                                                        팔로우
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img6.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-primary btn-sm" style="font-size: smaller">
-                                                        팔로우
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex align-items-center mt-3">
-                                        <img class="user-md" src="../assets/img/img5.jpg" />
-                                        <div class="ms-3 d-flex w-75">
-                                            <div class="me-auto">
-                                                <!--                                        <div>-->
-                                                <!--                                            <small class="text-muted" style="font-size: x-small">-->
-                                                <!--                                                개발 · 마케팅 광고-->
-                                                <!--                                            </small>-->
-                                                <!--                                        </div>-->
-                                                <div class="d-flex align-items-center">
-                                                    <span class="small">
-                                                       Cha Jee Hyung
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        풀스택 개발자
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        시급: 25,000 원
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        일평균 시간: 5 시간
-                                                    </small>
-
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <small class="text-muted" style="font-size: smaller">
-                                                        개발
-                                                    </small>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Frontend
-                                                </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                    Mobile
-                                                </span>
-                                                    <div class="border-end me-2 ms-2" style="height: 14px">
-
-                                                    </div>
-                                                    <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #python
-                                                    </span>
-                                                    <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
-                                                        #zeplin
-                                                </span>
-
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto">
-                                                <div class="d-flex align-items-center">
-                                                    <button class="btn btn-outline-primary btn-sm" style="font-size: smaller">
-                                                        팔로우
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
                     </div>
 
                 </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
+            <header>
+                <ul class="nav justify-content-center border-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-info.html">
+                            정보
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-task-info.html">
+                            Task 통계
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
+                            Workspace/Milestone
+                        </a>
+                    </li>
+                    <li class="nav-item border-bottom border-primary">
+                        <a class="nav-link text-black" href="./profile-followers.html">
+                            연결 친구
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-payment.html">
+                            정산/결제
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <span class="nav-link text-muted">-->
+                    <!--                        게시물-->
+                    <!--                    </span>-->
+                    <!--                </li>-->
+                </ul>
+            </header>
+            <div class="mt-3">
+                <div class="card">
+                    <div class="card-header bg-white">
+                        연결 친구
+                    </div>
+
+                    <div class="card-body">
+                        <ul class="nav nav-tabs border-bottom">
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page" id="followers-tab"
+                                   data-bs-toggle="tab" data-bs-target="#followers" type="button" role="tab" aria-controls="reply" aria-selected="true">
+                                    팔로워
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" id="followings-tab"
+                                   data-bs-toggle="tab" data-bs-target="#followings" type="button" role="tab" aria-controls="reply" aria-selected="true">
+                                    팔로잉
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" id="confirm-followers-tab"
+                                   data-bs-toggle="tab" data-bs-target="#confirm-followers" type="button" role="tab" aria-controls="reply" aria-selected="true">
+                                    연결 신청 관리
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="followers" role="tabpanel" aria-labelledby="followers-tab">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img4.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
+                                                            메세지
+                                                        </button>
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            삭제
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img6.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
+                                                            메세지
+                                                        </button>
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            삭제
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img5.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
+                                                            메세지
+                                                        </button>
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            삭제
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="followings" role="tabpanel" aria-labelledby="followings-tab">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img4.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
+                                                            메세지
+                                                        </button>
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            언팔로우
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img6.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
+                                                            메세지
+                                                        </button>
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            언팔로우
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img5.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-secondary btn-sm" style="font-size: smaller">
+                                                            메세지
+                                                        </button>
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            언팔로우
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="tab-pane" id="confirm-followers" role="tabpanel" aria-labelledby="confirm-followers-tab">
+                                <div class="pt-3 ps-3">
+                                    <h6 class="fw-bold mb-0">
+                                        보낸 신청 관리
+                                    </h6>
+
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img4.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            취소
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img6.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            취소
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img5.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <button class="btn btn-outline-danger ms-1 btn-sm" style="font-size: smaller">
+                                                            취소
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="pt-3 ps-3">
+                                    <h6 class="fw-bold mb-0">
+                                        받은 신청 관리
+                                    </h6>
+
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img4.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-primary btn-sm" style="font-size: smaller">
+                                                            팔로우
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img6.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-primary btn-sm" style="font-size: smaller">
+                                                            팔로우
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center mt-3">
+                                            <img class="user-md" src="../assets/img/img5.jpg" />
+                                            <div class="ms-3 d-flex w-75">
+                                                <div class="me-auto">
+                                                    <!--                                        <div>-->
+                                                    <!--                                            <small class="text-muted" style="font-size: x-small">-->
+                                                    <!--                                                개발 · 마케팅 광고-->
+                                                    <!--                                            </small>-->
+                                                    <!--                                        </div>-->
+                                                    <div class="d-flex align-items-center">
+                                                    <span class="small">
+                                                       Cha Jee Hyung
+                                                    </span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            풀스택 개발자
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            시급: 25,000 원
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            일평균 시간: 5 시간
+                                                        </small>
+
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <small class="text-muted" style="font-size: smaller">
+                                                            개발
+                                                        </small>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Frontend
+                                                </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                    Mobile
+                                                </span>
+                                                        <div class="border-end me-2 ms-2" style="height: 14px">
+
+                                                        </div>
+                                                        <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #python
+                                                    </span>
+                                                        <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
+                                                        #zeplin
+                                                </span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <div class="d-flex align-items-center">
+                                                        <button class="btn btn-outline-primary btn-sm" style="font-size: smaller">
+                                                            팔로우
+                                                        </button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
+    </main>
+</div>
 
-    </div>
-</main>
 
 </body>
 <!--<script>-->

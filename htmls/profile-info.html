@@ -35,7 +35,7 @@
 
     <!-- Initialize the editor. -->
 </head>
-<body>
+<body class="overflow-hidden">
 <nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1 text-secondary position-relative" style="z-index: 10">
     <div class="container-fluid" >
         <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
@@ -236,124 +236,126 @@
         </div>
     </div>
 </nav>
-<div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
-    <div class="container container-fluid">
-        <div class="row w-100">
-            <div class="col-4">
-            </div>
-            <div class="col-4 text-center" style="margin-top: 80px;">
-                <div class="">
-                    <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
+
+<div class="overflow-auto" style="max-height: 100vh">
+    <div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
+        <div class="container container-fluid">
+            <div class="row w-100">
+                <div class="col-4">
                 </div>
-            </div>
-            <div class="col-4 text-center" style="margin-top: 60px;">
-                <div class="btn-group btn-group-sm">
-                    <button class="btn btn-primary">
-                        팔로우
-                    </button>
+                <div class="col-4 text-center" style="margin-top: 80px;">
+                    <div class="">
+                        <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
+                    </div>
+                </div>
+                <div class="col-4 text-center" style="margin-top: 60px;">
+                    <div class="btn-group btn-group-sm">
+                        <button class="btn btn-primary">
+                            팔로우
+                        </button>
+
+                    </div>
+                    <div class="btn-group btn-group-sm">
+
+                        <button class="btn btn-outline-secondary">
+                            메세지
+                        </button>
+                    </div>
+
 
                 </div>
-                <div class="btn-group btn-group-sm">
-
-                    <button class="btn btn-outline-secondary">
-                        메세지
-                    </button>
-                </div>
-
-
             </div>
         </div>
+
     </div>
+    <div class="navbar navbar-expand bg-white">
+        <div class="container container-fluid mb-2" style="margin-top: 40px">
+            <div class="row w-100">
+                <div class="col-4">
 
-</div>
-<div class="navbar navbar-expand bg-white">
-    <div class="container container-fluid mb-2" style="margin-top: 40px">
-        <div class="row w-100">
-            <div class="col-4">
-
-            </div>
-            <div class="col-4">
-                <div class="d-flex align-items-center justify-content-center">
+                </div>
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-center">
                 <span class="fw-bold">
                     차지형
                 </span>
-                    <a class="ms-2" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-modal">
+                        <a class="ms-2" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-modal">
                         <span class="material-icons-outlined text-muted ms-2" style="font-size: 18px;">
                             mode_edit
                         </span>
-                    </a>
+                        </a>
 
-                </div>
-                <div class="d-flex align-items-center justify-content-center mt-2">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
                     <span class="small">
                         풀스택 개발자
                     </span>
-                </div>
-                <div class="d-flex align-items-center justify-content-center mt-1">
-                    <h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-1">
+                        <h6>
                         <span class="badge border" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
                             vue.js
                         </span>
-                    </h6>
-                    <h6>
+                        </h6>
+                        <h6>
                         <span class="badge border ms-1" style="font-size: x-small;  background-color: #eaecef; color: #6c757d; font-weight: normal">
                             python
                         </span>
-                    </h6>
-                </div>
-                <div class="d-flex align-items-center justify-content-center mt-1">
+                        </h6>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mt-1">
                     <span class="small">
                        다양한 경험을 가진 웹개발자입니다.
                     </span>
+                    </div>
+
                 </div>
+                <div class="col-4">
 
-            </div>
-            <div class="col-4">
-
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<main class="main" >
-    <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
-        <header>
-            <ul class="nav justify-content-center border-bottom">
-                <li class="nav-item border-bottom border-primary">
-                    <a class="nav-link text-black" href="./profile-info.html">
-                        정보
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-task-info.html">
-                        Task 통계
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
-                        Workspace/Milestone
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-followers.html">
-                        연결 친구
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-muted" href="./profile-payment.html">
-                        정산/결제
-                    </a>
-                </li>
-<!--                <li class="nav-item">-->
-<!--                    <span class="nav-link text-muted">-->
-<!--                        게시물-->
-<!--                    </span>-->
-<!--                </li>-->
-            </ul>
-        </header>
-        <div class="row mt-3">
-            <div class="col-4">
-                <div class="card">
+    <main class="main" >
+        <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
+            <header>
+                <ul class="nav justify-content-center border-bottom">
+                    <li class="nav-item border-bottom border-primary">
+                        <a class="nav-link text-black" href="./profile-info.html">
+                            정보
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-task-info.html">
+                            Task 통계
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
+                            Workspace/Milestone
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-followers.html">
+                            연결 친구
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="./profile-payment.html">
+                            정산/결제
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <span class="nav-link text-muted">-->
+                    <!--                        게시물-->
+                    <!--                    </span>-->
+                    <!--                </li>-->
+                </ul>
+            </header>
+            <div class="row mt-3">
+                <div class="col-4">
+                    <div class="card">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <div class="d-flex align-items-center">
@@ -451,11 +453,11 @@
                                             수행 현황
                                         </span>
                                     </div>
-<!--                                    <div class="ms-auto">-->
-<!--                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px;">-->
-<!--                                            mode_edit-->
-<!--                                        </span>-->
-<!--                                    </div>-->
+                                    <!--                                    <div class="ms-auto">-->
+                                    <!--                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px;">-->
+                                    <!--                                            mode_edit-->
+                                    <!--                                        </span>-->
+                                    <!--                                    </div>-->
                                 </div>
                                 <div class="d-flex align-items-center mt-2">
                                     <div class="w-100">
@@ -476,63 +478,63 @@
                                 </div>
                             </li>
                             <li class="list-group-item">
-                                    <div class="row p-3">
-                                        <div class="col-4 border-end text-center">
-                                            <small class="" style="font-size: smaller">
-                                                연결: 8
-                                            </small>
+                                <div class="row p-3">
+                                    <div class="col-4 border-end text-center">
+                                        <small class="" style="font-size: smaller">
+                                            연결: 8
+                                        </small>
 
-                                        </div>
-                                        <div class="col-4 border-end text-center">
-                                            <small class="" style="font-size: smaller">
-                                                팔로윙: 8
-                                            </small>
+                                    </div>
+                                    <div class="col-4 border-end text-center">
+                                        <small class="" style="font-size: smaller">
+                                            팔로윙: 8
+                                        </small>
 
-                                        </div>
-                                        <div class="col-4 text-center">
-                                            <small class="" style="font-size: smaller">
-                                                팔로워: 8
-                                            </small>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <small class="" style="font-size: smaller">
+                                            팔로워: 8
+                                        </small>
 
-                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
 
+                    </div>
                 </div>
-            </div>
-            <div class="col-8">
-                <div class="card">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
+                <div class="col-8">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="small" style="font-size: smaller">
                                             경력
                                         </span>
-                                        <span class="text-muted small" style="font-size: x-small">
+                                            <span class="text-muted small" style="font-size: x-small">
                                             (7년 4개월)
                                         </span>
-                                    </div>
+                                        </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
-                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-career-modal">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-career-modal">
                                             <span class="material-icons-outlined text-primary" style="font-size: 14px;">
                                                 add
                                             </span>
-                                        </a>
+                                            </a>
 
-                                        <span class="small text-primary" style="font-size: x-small">
+                                            <span class="small text-primary" style="font-size: x-small">
                                              추가
                                         </span>
-                                    </div>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-content-center mt-2">
+                                <div class="d-flex align-content-center mt-2">
                                     <div class="me-auto">
                                         <div class="d-flex">
                                             <span class="mt-2" style="width: 70px; height: 70px; background-color: #d8d8d8">
@@ -577,357 +579,360 @@
                                         </div>
 
                                     </div>
-                            </div>
+                                </div>
 
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex align-content-center mt-2">
-                                <div class="me-auto">
-                                    <div class="d-flex">
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex align-content-center mt-2">
+                                    <div class="me-auto">
+                                        <div class="d-flex">
                                             <span class="mt-2" style="width: 70px; height: 70px; background-color: #d8d8d8">
 
                                             </span>
-                                        <div class="ms-3">
-                                            <div>
+                                            <div class="ms-3">
+                                                <div>
                                                     <span class="small">
                                                         IGAWORKS
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small text-muted">
                                                         프론트엔드 개발
                                                     </span>
-                                            </div>
-                                            <div class="p-0">
+                                                </div>
+                                                <div class="p-0">
                                                     <span class="small text-muted p-0" style="font-size: x-small">
                                                         2019년 8월 ~ 현재 (3년 3개월)
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small">
                                                         - 프론트엔드 개발 <br/>
                                                         - 백엔드 개발
                                                     </span>
+                                                </div>
+
                                             </div>
-
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="material-icons-outlined text-muted" style="font-size: 14px;">
                                                 mode_edit
                                             </span>
-                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
                                                 close
                                             </span>
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
 
-                        </li>
-                        <li class="list-group-item">
-                            <div class="d-flex align-content-center mt-2">
-                                <div class="me-auto">
-                                    <div class="d-flex">
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex align-content-center mt-2">
+                                    <div class="me-auto">
+                                        <div class="d-flex">
                                             <span class="mt-2" style="width: 70px; height: 70px; background-color: #d8d8d8">
 
                                             </span>
-                                        <div class="ms-3">
-                                            <div>
+                                            <div class="ms-3">
+                                                <div>
                                                     <span class="small">
                                                         IGAWORKS
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small text-muted">
                                                         프론트엔드 개발
                                                     </span>
-                                            </div>
-                                            <div class="p-0">
+                                                </div>
+                                                <div class="p-0">
                                                     <span class="small text-muted p-0" style="font-size: x-small">
                                                         2019년 8월 ~ 현재 (3년 3개월)
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small">
                                                         - 프론트엔드 개발 <br/>
                                                         - 백엔드 개발
                                                     </span>
+                                                </div>
+
                                             </div>
-
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="material-icons-outlined text-muted" style="font-size: 14px;">
                                                 mode_edit
                                             </span>
 
 
-                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
                                                 close
                                             </span>
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
 
-                        </li>
+                            </li>
 
-                    </ul>
-                </div>
-                <div class="card mt-3">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
+                        </ul>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="small" style="font-size: smaller">
                                             학력
                                         </span>
 
-                                    </div>
+                                        </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
-                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-education-modal">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-education-modal">
                                             <span class="material-icons-outlined text-primary" style="font-size: 14px;">
                                             add
                                         </span>
-                                        </a>
+                                            </a>
 
-                                        <span class="small text-primary" style="font-size: x-small">
+                                            <span class="small text-primary" style="font-size: x-small">
                                              추가
                                         </span>
-                                    </div>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-content-center mt-2">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
+                                <div class="d-flex align-content-center mt-2">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="" style="width: 70px; height: 70px; background-color: #d8d8d8">
 
                                         </span>
-                                        <div class="ms-3">
-                                            <div>
+                                            <div class="ms-3">
+                                                <div>
                                                     <span class="small">
                                                         숭실 대학교
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small text-muted">
                                                         정보통계 보험수리(학사)
                                                     </span>
-                                            </div>
-                                            <div class="p-0">
+                                                </div>
+                                                <div class="p-0">
                                                     <span class="small text-muted p-0" style="font-size: x-small">
                                                         2008년 3월 ~ 2014년 8월
                                                     </span>
+                                                </div>
+
+
                                             </div>
-
-
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="material-icons-outlined text-muted" style="font-size: 14px;">
                                                 mode_edit
                                             </span>
-                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
                                                 close
                                             </span>
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
 
-                        </li>
-                    </ul>
-                </div>
-                <div class="card mt-3">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="small" style="font-size: smaller">
                                             프로젝트
                                         </span>
 
-                                    </div>
+                                        </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
-                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-project-modal">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-project-modal">
                                             <span class="material-icons-outlined text-primary" style="font-size: 14px;">
                                                 add
                                             </span>
-                                        </a>
+                                            </a>
 
-                                        <span class="small text-primary" style="font-size: x-small">
+                                            <span class="small text-primary" style="font-size: x-small">
                                              추가
                                         </span>
-                                    </div>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-content-center mt-2">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
-                                        <div class="">
-                                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-content-center mt-2">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="">
+                                                <div class="d-flex align-items-center">
                                                     <span class="small">
                                                         화주/포워더를 위한 수입/수출 모니터링 서비스
                                                     </span>
-                                                <span class="material-icons-outlined text-primary ms-1" style="font-size: 20px">
+                                                    <span class="material-icons-outlined text-primary ms-1" style="font-size: 20px">
                                                         link
                                                 </span>
-                                            </div>
-                                            <div class="p-0">
+                                                </div>
+                                                <div class="p-0">
                                                     <span class="small text-muted p-0" style="font-size: x-small">
                                                         2008년 3월 ~ 2014년 8월
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                 <span class="small" style="font-size: smaller">
                                                         프로젝트 설명
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small text-muted" style="font-size: smaller">
                                                         - 화주/포워더를 위한 수입/수출 업무 효율화를 위한 모니터링 서비스
                                                     </span>
-                                            </div>
-                                            <div class="d-flex align-items-center mt-2">
-                                                <div class="text-center">
-                                                    <img style="height: 30px; width: 30px; background-color: #d8d8d8">
+                                                </div>
+                                                <div class="d-flex align-items-center mt-2">
+                                                    <div class="text-center">
+                                                        <img style="height: 30px; width: 30px; background-color: #d8d8d8">
 
-                                                    <div class="text">
+                                                        <div class="text">
                                                          <span class="text-muted small" style="font-size: xx-small;">
                                                             포르 폴리오.ppt
                                                         </span>
+                                                        </div>
+
                                                     </div>
+                                                    <div class="ms-1 text-center">
+                                                        <img style="height: 30px; width: 30px; background-color: #d8d8d8">
 
-                                                </div>
-                                                <div class="ms-1 text-center">
-                                                    <img style="height: 30px; width: 30px; background-color: #d8d8d8">
-
-                                                    </img>
-                                                    <div class="text">
+                                                        </img>
+                                                        <div class="text">
                                                          <span class="text-muted small" style="font-size: xx-small;">
                                                             포르 폴리오2.ppt
                                                         </span>
+                                                        </div>
+
                                                     </div>
-
                                                 </div>
+
+
+
+
+
                                             </div>
-
-
-
-
-
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="material-icons-outlined text-muted" style="font-size: 14px;">
                                                 mode_edit
                                             </span>
-                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
                                                 close
                                             </span>
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
 
-                        </li>
-                    </ul>
-                </div>
-                <div class="card mt-3">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="d-flex">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="small" style="font-size: smaller">
                                             자격증
                                         </span>
 
-                                    </div>
+                                        </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
-                                        <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-certificate-modal">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
+                                            <a class="" style="cursor: pointer;"  data-mdb-toggle="modal" data-mdb-target="#profile-info-certificate-modal">
                                              <span class="material-icons-outlined text-primary" style="font-size: 14px;">
                                                 add
                                             </span>
-                                        </a>
+                                            </a>
 
-                                        <span class="small text-primary" style="font-size: x-small">
+                                            <span class="small text-primary" style="font-size: x-small">
                                              추가
                                         </span>
-                                    </div>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-content-center mt-2">
-                                <div class="me-auto">
-                                    <div class="d-flex align-items-center">
-                                        <div class="">
-                                            <div>
+                                <div class="d-flex align-content-center mt-2">
+                                    <div class="me-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="">
+                                                <div>
                                                     <span class="small">
                                                         정보처리기사
                                                     </span>
-                                            </div>
-                                            <div>
+                                                </div>
+                                                <div>
                                                     <span class="small text-muted">
                                                         한국산업인력공단
                                                     </span>
-                                            </div>
-                                            <div class="">
+                                                </div>
+                                                <div class="">
                                                     <span class="small text-muted p-0" style="font-size: x-small">
                                                         2012년 8월
                                                     </span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                </div>
-                                <div class="ms-auto">
-                                    <div class="d-flex align-items-center">
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="d-flex align-items-center">
                                         <span class="material-icons-outlined text-muted" style="font-size: 14px;">
                                                 mode_edit
                                             </span>
-                                        <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
+                                            <span class="material-icons-outlined text-muted ms-2" style="font-size: 14px">
                                                 close
                                             </span>
+                                        </div>
+
                                     </div>
-
                                 </div>
-                            </div>
 
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</main>
+        </div>
+    </main>
+</div>
+
+
 <div class="modal fade" id="profile-info-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
