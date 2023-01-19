@@ -402,7 +402,7 @@
         </div>
     </nav>
     <div class="container container-fluid">
-        <div class="mt-3 d-flex align-items-center">
+        <div class="mt-1 mb-2 d-flex align-items-center">
             <div class="me-auto">
                 <small class="text-muted" style="font-size: smaller">
                     Workspace / 플랫폼 개발
@@ -412,7 +412,7 @@
                 </h4>
             </div>
             <div class="ms-auto d-flex align-items-center">
-                <div class="d-flex align-items-center justify-content-center ms-3">
+                <div class="d-flex align-items-center justify-content-center me-4 mt-4">
                     <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
                     <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
                     <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px;">
@@ -424,266 +424,281 @@
                     </span>
 
 
-                    <div class="input-group input-group-sm ms-3">
-                        <input type="search" class="form-control" placeholder="Search">
+<!--                    <div class="input-group input-group-sm ms-3">-->
+<!--                        <input type="search" class="form-control" placeholder="Search">-->
+<!--                    </div>-->
+
+                </div>
+
+            </div>
+        </div>
+        <div class="border-top">
+            <div class="d-flex align-items-center mt-3">
+                <div class="me-auto w-50">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group input-group-sm" style="width: 30%">
+                            <input type="search" class="form-control border-end-0" placeholder="Search" >
+                            <label class="input-group-text" for="">
+                            <span class="material-icons-outlined text-muted" style="font-size: 16px">
+                                search
+                            </span>
+                            </label>
+
+                        </div>
+                        <button class="btn btn-primary btn-sm ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            지원자 관리
+                        </button>
                     </div>
 
                 </div>
 
             </div>
-        </div>
-        <div class="mt-3">
-            <div class="d-flex align-items-center mb-3">
-                <div class="me-auto">
-                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        지원자 관리
-                    </button>
-                </div>
-            </div>
-            <div class="card border-bottom-0" style="">
-
-                <div class="card-body p-0">
-                    <table class="table small mb-0" >
-                        <thead>
-                        <tr>
-                            <th scope="col">
+            <div class="mt-3">
+                <div class="card border-bottom-0" style="">
+                    <div class="card-body p-0">
+                        <table class="table small mb-0" >
+                            <thead>
+                            <tr>
+                                <th scope="col">
                                         <span class="ps-2">멤버
                                         </span>
-                            </th>
-                            <th scope="col">수행 Task</th>
-                            <th scope="col">수행 시간</th>
-                            <th scope="col">수행 금액</th>
-                            <th scope="col">시급</th>
-                            <th scope="col">일 평균 시간</th>
-                            <th scope="col">수행 현황(12월)</th>
-                            <th scope="col">권한</th>
-                            <th scope="col">내보내기</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="align-middle">
-                                <div class="ps-2">
-                                    <div class="align-content-center d-flex">
-                                        <img class="user" src="../assets/img/img4.jpg"/>
-                                        <div class="ms-2">
-                                            <div class="small">
-                                                Amelia
-                                            </div>
-                                            <div class="text-muted small" style="font-size: smaller">
-                                                amelia@gmail.com
+                                </th>
+                                <th scope="col">수행 Task</th>
+                                <th scope="col">수행 시간</th>
+                                <th scope="col">수행 금액</th>
+                                <th scope="col">시급</th>
+                                <th scope="col">일 평균 시간</th>
+                                <th scope="col">수행 현황(12월)</th>
+                                <th scope="col">권한</th>
+                                <th scope="col">내보내기</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <div class="ps-2">
+                                        <div class="align-content-center d-flex">
+                                            <img class="user" src="../assets/img/img4.jpg"/>
+                                            <div class="ms-2">
+                                                <div class="small">
+                                                    Amelia
+                                                </div>
+                                                <div class="text-muted small" style="font-size: smaller">
+                                                    amelia@gmail.com
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                         <span>
                                             2 Task
                                         </span>
 
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                     <span>
                                         30 시간
                                     </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                     <span>
                                         200,000 원
                                     </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                 <span>
                                     30,000 원
                                 </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                 <span>
                                     6 시간
                                 </span>
-                            </td>
-                            <td class="align-middle">
-                                <small class="" style="font-size: smaller">
-                                    30 시간
-                                </small>
-                                <div class="progress" style="height: 8px; border-radius: 5px">
-                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                </td>
+                                <td class="align-middle">
+                                    <small class="" style="font-size: smaller">
+                                        30 시간
+                                    </small>
+                                    <div class="progress" style="height: 8px; border-radius: 5px">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 
+                                        </div>
+                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+
+                                        </div>
                                     </div>
-                                    <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
 
-                                    </div>
-                                </div>
-
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                 <span class="">
                                     워크스패이스 소유자
                                 </span>
-                            </td>
-                            <td class="align-middle">
-                                <!--                                <div class="btn-group btn-group-sm">-->
-                                <!--                                    <button class="btn btn-outline-danger" style="font-size: smaller">-->
-                                <!--                                        내보내기-->
-                                <!--                                    </button>-->
-                                <!--                                </div>-->
-                            </td>
-                        </tr>
+                                </td>
+                                <td class="align-middle">
+                                    <!--                                <div class="btn-group btn-group-sm">-->
+                                    <!--                                    <button class="btn btn-outline-danger" style="font-size: smaller">-->
+                                    <!--                                        내보내기-->
+                                    <!--                                    </button>-->
+                                    <!--                                </div>-->
+                                </td>
+                            </tr>
                             <tr>
-                            <td class="align-middle">
-                                <div class="ps-2">
-                                    <div class="align-content-center d-flex">
-                                        <img class="user" src="../assets/img/img3.jpg"/>
-                                        <div class="ms-2">
-                                            <div class="small">
-                                                Thor
-                                            </div>
-                                            <div class="text-muted small" style="font-size: smaller">
-                                                thor@gmail.com
+                                <td class="align-middle">
+                                    <div class="ps-2">
+                                        <div class="align-content-center d-flex">
+                                            <img class="user" src="../assets/img/img3.jpg"/>
+                                            <div class="ms-2">
+                                                <div class="small">
+                                                    Thor
+                                                </div>
+                                                <div class="text-muted small" style="font-size: smaller">
+                                                    thor@gmail.com
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                             <span>
                                                 2 Task
                                             </span>
 
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                         <span>
                                             30 시간
                                         </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                         <span>
                                             200,000 원
                                         </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                     <span>
                                         30,000 원
                                     </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                 <span>
                                     10 시간
                                 </span>
-                            </td>
-                                <td class="align-middle">
-                                        <small class="" style="font-size: smaller">
-                                            30 시간
-                                        </small>
-                                        <div class="progress" style="height: 8px; border-radius: 5px">
-                                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-
-                                            </div>
-                                            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-
-                                            </div>
-                                        </div>
                                 </td>
-                            <td class="align-middle">
-                                <select name="" id="" class="form-select-sm form-select">
-                                    <option value="">
-                                        관리자
-                                    </option>
-                                    <option value="">
-                                        일반 사용자
-                                    </option>
-                                </select>
-                            </td>
-                            <td class="align-middle">
-                                <div class="btn-group btn-group-sm">
-                                    <button class="btn btn-outline-danger" style="font-size: smaller">
-                                      내보내기
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
+                                <td class="align-middle">
+                                    <small class="" style="font-size: smaller">
+                                        30 시간
+                                    </small>
+                                    <div class="progress" style="height: 8px; border-radius: 5px">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 
-                        <tr>
-                            <td class="align-middle">
-                                <div class="ps-2">
-                                    <div class="align-content-center d-flex">
-                                        <img class="user" src="../assets/img/img7.jpg"/>
-                                        <div class="ms-2">
-                                            <div class="small">
-                                                Kevin Who
-                                            </div>
-                                            <div class="text-muted small" style="font-size: smaller">
-                                                kevin@gmail.com
+                                        </div>
+                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle">
+                                    <select name="" id="" class="form-select-sm form-select">
+                                        <option value="">
+                                            관리자
+                                        </option>
+                                        <option value="">
+                                            일반 사용자
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-outline-danger" style="font-size: smaller">
+                                            내보내기
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle">
+                                    <div class="ps-2">
+                                        <div class="align-content-center d-flex">
+                                            <img class="user" src="../assets/img/img7.jpg"/>
+                                            <div class="ms-2">
+                                                <div class="small">
+                                                    Kevin Who
+                                                </div>
+                                                <div class="text-muted small" style="font-size: smaller">
+                                                    kevin@gmail.com
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                         <span>
                                             2 Task
                                         </span>
 
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                     <span>
                                         30 시간
                                     </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                     <span>
                                         200,000 원
                                     </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                 <span>
                                     30,000 원
                                 </span>
-                            </td>
-                            <td class="align-middle">
+                                </td>
+                                <td class="align-middle">
                                 <span>
                                     8 시간
                                 </span>
-                            </td>
-                            <td class="align-middle">
-                                <small class="" style="font-size: smaller">
-                                    30 시간
-                                </small>
-                                <div class="progress" style="height: 8px; border-radius: 5px">
-                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                </td>
+                                <td class="align-middle">
+                                    <small class="" style="font-size: smaller">
+                                        30 시간
+                                    </small>
+                                    <div class="progress" style="height: 8px; border-radius: 5px">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 
+                                        </div>
+                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+
+                                        </div>
                                     </div>
-                                    <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #e9ecef; color: black" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
 
+                                </td>
+                                <td class="align-middle">
+                                    <select name="" id="" class="form-select-sm form-select">
+                                        <option value="">
+                                            일반 사용자
+                                        </option>
+                                        <option value="">
+                                            관리자
+                                        </option>
+
+                                    </select>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-outline-danger" style="font-size: smaller">
+                                            내보내기
+                                        </button>
                                     </div>
-                                </div>
-
-                            </td>
-                            <td class="align-middle">
-                                <select name="" id="" class="form-select-sm form-select">
-                                    <option value="">
-                                        일반 사용자
-                                    </option>
-                                    <option value="">
-                                        관리자
-                                    </option>
-
-                                </select>
-                            </td>
-                            <td class="align-middle">
-                                <div class="btn-group btn-group-sm">
-                                    <button class="btn btn-outline-danger" style="font-size: smaller">
-                                        내보내기
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </main>
 <div class="modal fade slideout" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
