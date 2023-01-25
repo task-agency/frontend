@@ -240,61 +240,84 @@
     </div>
 </nav>
 <main class="main d-flex overflow-auto" style="max-height: 90vh">
-<!--    <nav class="snb border">-->
-<!--        <div class="position-sticky mt-2">-->
-<!--            <div href="/" class="p-2 text-center">-->
-<!--                <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">-->
-<!--                <div class="w-100 border-bottom mt-3">-->
+    <nav class="snb border collapse show" id="collapseExample">
+        <div class="position-sticky mt-2">
+            <div class="pe-3 ps-3 pb-3 pt-3 text-center">
+                <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">
+                <div class="w-100 border-bottom mt-3">
 
-<!--                </div>-->
-<!--            </div>-->
-<!--            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link text-center text-muted" href="./workspace-dashboard.html">-->
-<!--                        <span class="material-icons-outlined">-->
-<!--                            dashboard-->
-<!--                        </span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a href="./workspace-task-kaban.html" class="nav-link text-center text-primary">-->
-<!--                       <span class="material-icons-outlined">-->
-<!--                        check_circle-->
-<!--                        </span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a href="./workspace-milestones.html" class="nav-link text-center text-muted">-->
-<!--                        <span class="material-icons-outlined">-->
-<!--                        view_timeline-->
-<!--                    </span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="nav-item" href="">-->
-<!--                    <a href="./workspace-channels.html" class="nav-link text-center text-muted">-->
-<!--                       <span class="material-icons-outlined">-->
-<!--                        question_answer-->
-<!--                        </span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="nav-item" href="" >-->
-<!--                    <a href="./workspace-members.html" class="nav-link text-center text-muted">-->
-<!--                        <span class="material-icons-outlined">-->
-<!--                            people-->
-<!--                    </span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="nav-item" href="" >-->
-<!--                    <a href="./workspace-setting.html" class="nav-link text-center text-muted">-->
-<!--                        <span class="material-icons-outlined">-->
-<!--                        settings-->
-<!--                    </span>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </nav>-->
-    <nav class="snb-lg border">
+                </div>
+            </div>
+            <ul class="nav nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="./workspace-dashboard.html">
+                        <div class="align-items-center d-flex justify-content-center">
+                                 <span class="material-icons-outlined text-muted">
+                                    dashboard
+                                 </span>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./workspace-task-kaban.html" class="nav-link text-center text-muted">
+                        <div class="align-items-center d-flex justify-content-center">
+                                <span class="material-icons-outlined text-primary">
+                                check_circle
+                                </span>
+                        </div>
+
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="./workspace-milestones.html" class="nav-link text-center text-muted">-->
+                <!--                        <span class="material-icons-outlined text-muted">-->
+                <!--                        view_timeline-->
+                <!--                    </span>-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <li class="nav-item" href="">
+                    <a href="./workspace-channels.html" class="nav-link text-center text-muted">
+                        <div class="align-items-center d-flex justify-content-center">
+                                 <span class="material-icons-outlined text-muted">
+                                question_answer
+                                </span>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="nav-item" href="" >
+                    <a href="./workspace-members.html" class="nav-link text-center text-muted">
+                        <div class="align-items-center d-flex justify-content-center">
+                                <span class="material-icons-outlined text-muted">
+                                        people
+                                </span>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="nav-item" href="" >
+                    <a href="./workspace-setting.html" class="nav-link text-center text-muted">
+                        <div class="align-items-center d-flex justify-content-center">
+                                <span class="material-icons-outlined text-muted">
+                            settings
+                        </span>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center" href="" >
+                <div class="ms-auto" >
+                    <button class="btn position-absolute btn-floating" style="z-index: 20; background-color: #fff; margin-left: -20px;" data-mdb-toggle="collapse" data-mdb-parent="#accordion" aria-expanded="false" href="#collapseExample" role="button" aria-controls="collapseExample">
+                        <i class="bi-arrow-bar-right text-muted" style="font-size: 14px"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <nav class="snb-lg border collapse" id="collapseExample2">
         <div class="position-sticky mt-2">
             <!--            <div class="d-flex align-items-center">-->
             <!--                <div class="ms-auto">-->
@@ -314,33 +337,29 @@
                             expand_more
                         </span>
                     </div>
-<!--                    <select name="" id="" class="form-select-sm form-select ms-1" style="font-size: 13px">-->
-<!--                        <option value="">-->
-<!--                            플랫폼 개발-->
-<!--                        </option>-->
-<!--                    </select>-->
+
                 </div>
                 <div class="w-100 border-bottom mt-3">
                 </div>
             </div>
             <ul class="nav nav-flush flex-column mb-auto text-center">
-                <li class="nav-item">
+                <li class="nav-item" >
                     <a class="nav-link text-center" href="./workspace-dashboard.html">
                         <div class="d-flex align-items-center">
-                            <span class="material-icons-outlined text-muted">
-                                dashboard
-                            </span>
+                                <span class="material-icons-outlined text-muted">
+                                    dashboard
+                                </span>
                             <span class="ms-3 small text-black">
-                                Dashboard
-                            </span>
+                                    Dashboard
+                                </span>
                         </div>
 
                     </a>
                 </li>
-                <li class="nav-item" style="background-color: #eaecef">
-                    <a href="./workspace-task-kaban.html" class="nav-link text-center text-primary">
+                <li class="nav-item">
+                    <a href="./workspace-task-kaban.html" class="nav-link text-center">
                         <div class="align-items-center d-flex">
-                            <span class="material-icons-outlined">
+                            <span class="material-icons-outlined text-primary">
                             check_circle
                             </span>
                             <span class="ms-3 small">
@@ -350,27 +369,27 @@
 
                     </a>
                 </li>
-<!--                <li class="nav-item">-->
-<!--                    <a href="./workspace-milestones.html" class="nav-link text-center">-->
-<!--                        <div class="d-flex align-items-center">-->
-<!--                             <span class="material-icons-outlined text-muted">-->
-<!--                                view_timeline-->
-<!--                            </span>-->
-<!--                            <span class="ms-3 small text-black">-->
-<!--                                Milestone-->
-<!--                            </span>-->
-<!--                        </div>-->
-<!--                    </a>-->
-<!--                </li>-->
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="./workspace-milestones.html" class="nav-link text-center">-->
+                <!--                        <div class="d-flex align-items-center">-->
+                <!--                             <span class="material-icons-outlined text-muted">-->
+                <!--                                view_timeline-->
+                <!--                            </span>-->
+                <!--                            <span class="ms-3 small text-black">-->
+                <!--                                Milestone-->
+                <!--                            </span>-->
+                <!--                        </div>-->
+                <!--                    </a>-->
+                <!--                </li>-->
                 <li class="nav-item" href="">
                     <a href="./workspace-channels.html" class="nav-link text-center">
                         <div class="d-flex align-items-center">
-                            <span class="material-icons-outlined text-muted">
+                            <span class="material-icons-outlined text-muted text-muted">
                             question_answer
                             </span>
-                            <div class="ms-3 small text-black">
+                            <span class="ms-3 text-black small">
                                 Channels
-                            </div>
+                            </span>
                         </div>
                     </a>
                 </li>
@@ -380,28 +399,34 @@
                              <span class="material-icons-outlined text-muted">
                                     people
                             </span>
-                            <div class="ms-3 small text-black">
+                            <span class="ms-3 text-black small">
                                 Members
-                            </div>
+                            </span>
                         </div>
                     </a>
                 </li>
                 <li class="nav-item" href="" >
-                    <a href="./workspace-setting.html" class="nav-link text-center">
-                        <div class="align-items-center d-flex">
+                    <div class="d-flex align-items-center">
+                        <a href="./workspace-setting.html" class="nav-link text-center">
+
+                            <div class="align-items-center d-flex">
                             <span class="material-icons-outlined text-muted">
                                 settings
                             </span>
-                            <span class="ms-3 small text-black">
+                                <span class="ms-3 text-black small">
                                 Setting
                             </span>
-                        </div>
-                    </a>
+                            </div>
+                        </a>
+                    </div>
+
+
                 </li>
+
             </ul>
             <div class="d-flex align-items-center" href="" >
                 <div class="ms-auto">
-                    <button class="btn position-absolute btn-floating" style="z-index: 20; background-color: #fff; margin-left: -20px;">
+                    <button class="btn position-absolute btn-floating" data-mdb-toggle="collapse" data-mdb-parent="#accordion" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" style="z-index: 20; background-color: #fff; margin-left: -20px;">
                         <i class="bi-arrow-bar-left text-muted" style="font-size: 14px"></i>
                     </button>
                 </div>
@@ -2538,6 +2563,25 @@
 </script>
 <script>
     new FroalaEditor('edit', {height: 60});
+</script>
+<script>
+
+    var myCollapsible = document.getElementById('collapseExample')
+    var myCollapsible2 = document.getElementById('collapseExample2')
+
+    myCollapsible.addEventListener('hidden.bs.collapse', function () {
+        var myCollapse = document.getElementById('collapseExample2')
+        var bsCollapse = new bootstrap.Collapse(myCollapse, {
+            toggle: true
+        })
+    })
+
+    myCollapsible2.addEventListener('hidden.bs.collapse', function () {
+        var myCollapse = document.getElementById('collapseExample')
+        var bsCollapse = new bootstrap.Collapse(myCollapse, {
+            toggle: true
+        })
+    })
 </script>
 <style>
     /*.gnb{*/
