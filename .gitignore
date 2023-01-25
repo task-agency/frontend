@@ -16,6 +16,8 @@
 .idea/modules.xml
 .idea/watcherTasks.xml
 
+.idea
+
 # AWS User-specific
 .idea/**/aws.xml
 
