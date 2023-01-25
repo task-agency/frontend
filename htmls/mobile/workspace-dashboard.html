@@ -38,13 +38,131 @@
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
-<body class="d-flex flex-column overflow-hidden" style="height: 100vh; max-height: -webkit-fill-available">
+<body class="overflow-hidden" style="height: 100vh; max-height: -webkit-fill-available">
+<nav class="snb-lg border position-absolute bg-white collapse" id="collapseExample" style="z-index: 1000">
+    <div class="">
+        <!--            <div class="d-flex align-items-center">-->
+        <!--                <div class="ms-auto">-->
+        <!--                    <span class="material-icons-outlined">-->
+        <!--                    west-->
+        <!--                    </span>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <div href="/" class="pe-3 ps-3 pb-3 pt-3 text-center">
+            <div class="d-flex align-items-center">
+                <img src="../../assets/img/brands/google-icon.svg" alt="" style="width: 20px">
+                <div class="d-flex align-items-center w-100">
+                        <span class="small ms-2" style="font-size: x-small">
+                            플랫폼 개발
+                        </span>
+                    <span class="material-icons-outlined ms-1 " style="font-size: 15px">
+                            expand_more
+                        </span>
+                </div>
+                <!--                    <select name="" id="" class="form-select-sm form-select ms-1" style="font-size: 13px">-->
+                <!--                        <option value="">-->
+                <!--                            플랫폼 개발-->
+                <!--                        </option>-->
+                <!--                    </select>-->
+            </div>
+            <div class="w-100 border-bottom mt-3">
+            </div>
+        </div>
+        <ul class="nav nav-flush flex-column mb-auto text-center">
+            <li class="nav-item" style="background-color: #eaecef">
+                <a class="nav-link text-center" href="./workspace-dashboard.html">
+                    <div class="d-flex align-items-center">
+                            <span class="material-icons-outlined text-muted" style="font-size: smaller" >
+                                dashboard
+                            </span>
+                        <span class="ms-2 small text-primary" style="font-size: x-small">
+                                Dashboard
+                        </span>
+                    </div>
+
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./workspace-task-kaban.html" class="nav-link text-center text-black">
+                    <div class="align-items-center d-flex">
+                            <span class="material-icons-outlined" style="font-size: smaller">
+                            check_circle
+                            </span>
+                        <span class="ms-2 small" style="font-size: x-small">
+                            Task
+                        </span>
+                    </div>
+
+                </a>
+            </li>
+            <!--                <li class="nav-item">-->
+            <!--                    <a href="./workspace-milestones.html" class="nav-link text-center">-->
+            <!--                        <div class="d-flex align-items-center">-->
+            <!--                             <span class="material-icons-outlined text-muted">-->
+            <!--                                view_timeline-->
+            <!--                            </span>-->
+            <!--                            <span class="ms-3 small text-black">-->
+            <!--                                Milestone-->
+            <!--                            </span>-->
+            <!--                        </div>-->
+            <!--                    </a>-->
+            <!--                </li>-->
+            <li class="nav-item" href="">
+                <a href="./workspace-channels.html" class="nav-link text-center">
+                    <div class="d-flex align-items-center">
+                            <span class="material-icons-outlined text-muted" style="font-size: smaller">
+                            question_answer
+                            </span>
+                        <div class="ms-2 small text-black" style="font-size: x-small">
+                            Channels
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" href="" >
+                <a href="./workspace-members.html" class="nav-link text-center">
+                    <div class="d-flex align-items-center">
+                             <span class="material-icons-outlined text-muted" style="font-size: smaller">
+                                    people
+                            </span>
+                        <div class="ms-2 small text-black" style="font-size: x-small">
+                            Members
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" href="" >
+                <a href="./workspace-setting.html" class="nav-link text-center">
+                    <div class="align-items-center d-flex">
+                            <span class="material-icons-outlined text-muted" style="font-size: smaller">
+                                settings
+                            </span>
+                        <span class="ms-2 small text-black" style="font-size: x-small">
+                                Setting
+                            </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="d-flex align-items-center" href="" >
+            <div class="ms-auto">
+                <button class="btn position-absolute btn-floating" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample" style="z-index: 20; background-color: #fff; margin-left: -20px;">
+                    <i class="bi-arrow-bar-left text-muted" style="font-size: 14px"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</nav>
     <nav class="bg-white border-bottom d-flex align-items-center justify-content-center align-content-center position-sticky" style="height: 8%; z-index: 999">
         <div class="container-fluid">
             <div class="d-flex align-items-center">
                 <div class="me-auto">
                     <div class="d-flex align-items-center">
-                        <img src="../../assets/img/brands/google-icon.svg" alt="" style="width: 20px">
+                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="../../assets/img/brands/google-icon.svg" alt="" style="width: 20px">
+                        </a>
+
                         <span class="ms-2">
                             Dashboard
                         </span>
@@ -407,60 +525,60 @@
         <div class="container-fluid p-2">
             <div class="row">
             <div style="width: 20%">
-                <div class="text-center">
-                    <i class="bi-stickies nav-icon text-primary" style="font-size: x-large"></i>
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                    <i class="bi-stickies nav-icon text-primary d-flex" style="font-size: x-large"></i>
                 </div>
-<!--                <div class="text-center">-->
-<!--                     <span class="small" style="font-size: x-small">-->
-<!--                        Workspaces-->
-<!--                    </span>-->
-<!--                </div>-->
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                     <span class="small text-primary" style="font-size: x-small">
+                        Workspaces
+                    </span>
+                </div>
             </div>
             <div style="width: 20%">
-                <div class="text-center">
-                    <i class="bi-receipt nav-icon" style="font-size: x-large"></i>
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                    <i class="bi-receipt nav-icon d-flex" style="font-size: x-large"></i>
                 </div>
-<!--                <div class="text-center">-->
-<!--                     <span class="small" style="font-size: x-small">-->
-<!--                        Milestones-->
-<!--                    </span>-->
-<!--                </div>-->
-
-
-            </div>
-            <div style="width: 20%">
-                <div class="text-center">
-                    <i class="bi-people nav-icon" style="font-size: x-large"></i>
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                     <span class="small" style="font-size: x-small">
+                        Milestones
+                    </span>
                 </div>
-<!--                <div class="text-center">-->
-<!--                     <span class="small" style="font-size: x-small">-->
-<!--                        Workspaces-->
-<!--                    </span>-->
-<!--                </div>-->
 
 
             </div>
             <div style="width: 20%">
-                <div class="text-center">
-                    <i class="bi-bell nav-icon" style="font-size: x-large"></i>
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                    <i class="bi-people nav-icon d-flex" style="font-size: x-large"></i>
                 </div>
-<!--                <div class="text-center">-->
-<!--                     <span class="small" style="font-size: x-small">-->
-<!--                        Alarm-->
-<!--                    </span>-->
-<!--                </div>-->
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                     <span class="small" style="font-size: x-small">
+                        Workspaces
+                    </span>
+                </div>
 
 
             </div>
-            <div class="justify-content-center align-items-center align-middle" style="width: 20%">
-                <div class="text-center">
-                    <img class="rounded-circle" style="width: 30px; height: 30px; margin-top: 3px" src="../../assets/img/img7.jpg"/>
+            <div style="width: 20%">
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                    <i class="bi-bell nav-icon d-flex" style="font-size: x-large"></i>
                 </div>
-<!--                <div class="text-center" style="margin-top: 9px">-->
-<!--                     <span class="small" style="font-size: x-small">-->
-<!--                        ChaJeeHyung-->
-<!--                    </span>-->
-<!--                </div>-->
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                     <span class="small" style="font-size: x-small">
+                        Alarm
+                    </span>
+                </div>
+
+
+            </div>
+            <div class="" style="width: 20%">
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                    <img class="rounded-circle" style="width: 25px; height: 25px;" src="../../assets/img/img7.jpg"/>
+                </div>
+                <div class="d-flex align-items-center justify-content-center align-content-center">
+                     <span class="small" style="font-size: x-small">
+                        ChaJeeHyung
+                    </span>
+                </div>
 
 
             </div>
@@ -546,8 +664,8 @@
     }
 
     .snb-lg{
-        width: 200px;
-        height: 100vh;
+        width: 135px;
+        height: 100%;
     }
 
     .snb{
