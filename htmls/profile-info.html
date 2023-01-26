@@ -240,27 +240,16 @@
 <div class="overflow-auto" style="max-height: 90vh">
     <div class="navbar navbar-expand" style="background-color: #eaecef; height: 80px;">
         <div class="container container-fluid">
-            <div class="row w-100">
+            <div class="row w-100" style="margin-top: 80px;">
                 <div class="col-4">
                 </div>
-                <div class="col-4 text-center" style="margin-top: 80px;">
+                <div class="col-4 text-center" >
                     <div class="">
                         <img class="user-lg border-white position-relative" src="../assets/img/img3.jpg" alt="" style="z-index: 10">
                     </div>
                 </div>
-                <div class="col-4 text-center" style="margin-top: 60px;">
-                    <div class="btn-group btn-group-sm">
-                        <button class="btn btn-primary">
-                            팔로우
-                        </button>
+                <div class="col-4">
 
-                    </div>
-                    <div class="btn-group btn-group-sm">
-
-                        <button class="btn btn-outline-secondary">
-                            메세지
-                        </button>
-                    </div>
 
 
                 </div>
@@ -320,38 +309,82 @@
     <main class="main" >
         <div class="container container-fluid" style="padding-left: 15rem; padding-right: 15rem">
             <header>
-                <ul class="nav justify-content-center border-bottom">
-                    <li class="nav-item border-bottom border-primary">
-                        <a class="nav-link text-black" href="./profile-info.html">
-                            정보
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="./profile-task-info.html">
-                            Task 통계
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
-                            Workspace/Milestone
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="./profile-followers.html">
-                            연결 친구
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="./profile-payment.html">
-                            정산/결제
-                        </a>
-                    </li>
-                    <!--                <li class="nav-item">-->
-                    <!--                    <span class="nav-link text-muted">-->
-                    <!--                        게시물-->
-                    <!--                    </span>-->
-                    <!--                </li>-->
-                </ul>
+                <div class="d-flex align-items-center border-bottom pt-3">
+                    <div class="me-auto">
+                        <ul class="nav">
+                            <li class="nav-item border-bottom border-primary">
+                                <a class="nav-link" href="./profile-info.html">
+                                    정보
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="./profile-task-info.html">
+                                    Task 통계
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="./profile-workspace-milestone.html">
+                                    Workspace/Milestone
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="./profile-followers.html">
+                                    연결 친구
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="./profile-payment.html">
+                                    정산/결제
+                                </a>
+                            </li>
+                            <!--                <li class="nav-item">-->
+                            <!--                    <span class="nav-link text-muted">-->
+                            <!--                        게시물-->
+                            <!--                    </span>-->
+                            <!--                </li>-->
+                        </ul>
+                    </div>
+                    <div class="ms-auto">
+                        <div class="btn-group btn-group-sm">
+                            <button class="btn btn-outline-secondary small border-end-0" style="font-size: x-small;">
+                                메세지
+                            </button>
+                            <button class="btn btn-outline-secondary small " id="drop2" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: x-small; border-top-right-radius: 3px; border-bottom-right-radius: 3px">
+                                                        <span class="material-icons-outlined mt-1" style="font-size: 12px">
+                                                        more_horiz
+                                                        </span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="drop1">
+                                <li>
+                                    <a class="dropdown-item dropdown-menu-sm-end" data-bs-toggle="modal" data-bs-target="#assign-workspaces" style="cursor: pointer">
+                                        <small style="font-size: smaller">
+                                            Workspace 초대
+                                        </small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#assign-milestones" style="cursor: pointer">
+                                        <small style="font-size: smaller">
+                                            Milestone 제안
+                                        </small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./settings.html">
+                                        <small style="font-size: smaller">
+                                            팔로우
+                                        </small>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </header>
             <div class="row mt-3">
                 <div class="col-4">
