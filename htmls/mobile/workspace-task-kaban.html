@@ -69,13 +69,13 @@
             </div>
         </div>
         <ul class="nav nav-flush flex-column mb-auto text-center">
-            <li class="nav-item" style="background-color: #eaecef">
+            <li class="nav-item">
                 <a class="nav-link text-center" href="./workspace-dashboard.html">
                     <div class="d-flex align-items-center">
                             <span class="material-icons-outlined text-muted" >
                                 dashboard
                             </span>
-                        <span class="ms-3 small text-primary">
+                        <span class="ms-3 small text-muted">
                                 Dashboard
                         </span>
                     </div>
@@ -83,9 +83,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="./workspace-task-kaban.html" class="nav-link text-center text-black">
+                <a href="./workspace-task-kaban.html" class="nav-link text-center" style="background-color: #eaecef">
                     <div class="align-items-center d-flex">
-                            <span class="material-icons-outlined text-muted">
+                            <span class="material-icons-outlined text-primary">
                             task
                             </span>
                         <span class="ms-3 small">
@@ -198,49 +198,63 @@
 <div class="main flex-shrink-0 overflow-auto" style="height: 84%">
         <div class="container-fluid">
             <div class="d-flex align-items-center mt-3 ms-2 me-2">
-                <div class="d-flex align-items-center p-1" style="border-radius: 5px; background-color:#eaecef">
-                    <div class="bg-white shadow pe-2 ps-2" style="border-radius: 5px">
-                        <a href="./workspace-task-kaban.html" class="text-decoration-none text-muted">
-                            <i class="bi-grid" style="font-size: 13px"></i>
-                        </a>
+                <div class="me-auto">
+                    <div class="d-flex align-items-center p-1" style="border-radius: 5px; background-color:#eaecef">
+                        <div class="bg-white shadow pe-2 ps-2" style="border-radius: 5px">
+                            <a href="./workspace-task-kaban.html" class="text-decoration-none text-muted">
+                                <i class="bi-grid" style="font-size: 13px"></i>
+                            </a>
+                        </div>
+                        <div class="ms-1 pe-2 ps-2" style="border-radius: 5px">
+                            <a href="./workspace-task-table.html" class="text-decoration-none text-muted">
+                                <i class="bi-view-list" style="font-size: 13px"></i>
+                            </a>
+                        </div>
+                        <div class="ms-1 pe-2 ps-2" style="border-radius: 5px">
+                            <a href="./workspace-task-calender.html" class="text-decoration-none text-muted">
+                                <i class="bi-calendar-week" style="font-size: 13px"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="ms-1 pe-2 ps-2" style="border-radius: 5px">
+                            <a href="./workspace-task-milestones.html" class="text-decoration-none text-muted">
+                                <i class="bi-receipt" style="font-size: 13px"></i>
+                            </a>
+
+                        </div>
+
+                        <!--                        <span class="material-icons-outlined text-muted ms-1" style="font-size: 24px">-->
+                        <!--                        <a href="./workspace-task-table.html" class="text-decoration-none text-muted">-->
+                        <!--                            format_list_bulleted-->
+                        <!--                        </a>-->
+                        <!--                    </span>-->
+                        <!--                        <span class="material-icons-outlined text-muted ms-1" style="font-size: 24px">-->
+                        <!--                        <a href="./workspace-task-calender.html" class="text-decoration-none text-muted">-->
+                        <!--                            calendar_month-->
+                        <!--                        </a>-->
+
+                        <!--                    </span>-->
+                        <!--                        <span class="material-icons-outlined text-muted ms-1" style="font-size: 24px">-->
+                        <!--                        <a href="./workspace-task-milestones.html" class="text-decoration-none text-muted">-->
+                        <!--                            view_timeline-->
+                        <!--                        </a>-->
+
+                        <!--                    </span>-->
                     </div>
-                    <div class="ms-1 pe-2 ps-2" style="border-radius: 5px">
-                        <a href="./workspace-task-table.html" class="text-decoration-none text-muted">
-                            <i class="bi-view-list" style="font-size: 13px"></i>
-                        </a>
-                    </div>
-                    <div class="ms-1 pe-2 ps-2" style="border-radius: 5px">
-                        <a href="./workspace-task-calender.html" class="text-decoration-none text-muted">
-                            <i class="bi-calendar-week" style="font-size: 13px"></i>
-                        </a>
-
-                    </div>
-
-                    <div class="ms-1 pe-2 ps-2" style="border-radius: 5px">
-                        <a href="./workspace-task-milestones.html" class="text-decoration-none text-muted">
-                            <i class="bi-receipt" style="font-size: 13px"></i>
-                        </a>
-
-                    </div>
-
-                    <!--                        <span class="material-icons-outlined text-muted ms-1" style="font-size: 24px">-->
-                    <!--                        <a href="./workspace-task-table.html" class="text-decoration-none text-muted">-->
-                    <!--                            format_list_bulleted-->
-                    <!--                        </a>-->
-                    <!--                    </span>-->
-                    <!--                        <span class="material-icons-outlined text-muted ms-1" style="font-size: 24px">-->
-                    <!--                        <a href="./workspace-task-calender.html" class="text-decoration-none text-muted">-->
-                    <!--                            calendar_month-->
-                    <!--                        </a>-->
-
-                    <!--                    </span>-->
-                    <!--                        <span class="material-icons-outlined text-muted ms-1" style="font-size: 24px">-->
-                    <!--                        <a href="./workspace-task-milestones.html" class="text-decoration-none text-muted">-->
-                    <!--                            view_timeline-->
-                    <!--                        </a>-->
-
-                    <!--                    </span>-->
                 </div>
+                <div class="ms-auto">
+                    <div class="d-flex align-items-center">
+                        <a class="d-flex" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <span class="material-symbols-outlined text-muted">
+                        add_circle
+                        </span>
+                        </a>
+                    </div>
+
+
+                </div>
+
             </div>
 
             <div class="card mt-3 mb-3 ms-2 me-2" style="background-color: #eaecef; ">
