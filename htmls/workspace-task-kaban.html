@@ -37,7 +37,7 @@
     <!-- Initialize the editor. -->
 </head>
 <body class="overflow-hidden">
-<nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1 position-relative" style="z-index: 10">
+<nav class="navbar navbar-expand bg-white border-bottom pt-1 pb-1">
     <div class="container-fluid" >
         <!--        <img class="navbar-brand ms-3" src="../assets/img/logos/logo.svg" style="width: 100px"/>-->
         <span class="material-symbols-outlined ms-3 text-secondary" style="font-size: 38px">
@@ -50,11 +50,9 @@
         <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
                 <li class="nav-item">
-                    <a class="nav-link active text-primary" aria-current="page" href="./workspaces.html">
+                    <a class="nav-link active" aria-current="page" href="./workspaces.html">
                         Workspaces
                     </a>
-                    <div class="border-bottom border-top w-100 border-primary">
-                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="./milestones.html">Milestones</a>
@@ -240,7 +238,7 @@
     </div>
 </nav>
 <main class="main d-flex overflow-auto" style="max-height: 90vh">
-    <nav class="snb border collapse show" id="collapseExample">
+    <nav class="snb border collapse" id="collapseExample2">
         <div class="position-sticky mt-2">
             <div class="pe-3 ps-3 pb-3 pt-3 text-center">
                 <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">
@@ -309,7 +307,7 @@
             </ul>
             <div class="d-flex align-items-center" href="" >
                 <div class="ms-auto" >
-                    <button class="btn position-absolute btn-floating" style="z-index: 20; background-color: #fff; margin-left: -20px;" data-mdb-toggle="collapse" data-mdb-parent="#accordion" aria-expanded="false" href="#collapseExample" role="button" aria-controls="collapseExample">
+                    <button class="btn position-absolute btn-floating" style="z-index: 20; background-color: #fff; margin-left: -20px;" data-mdb-toggle="collapse" data-mdb-parent="#accordion" aria-expanded="false" href="#collapseExample2" role="button" aria-controls="collapseExample2">
                         <i class="bi-arrow-bar-right text-muted" style="font-size: 14px"></i>
                     </button>
                 </div>
@@ -317,7 +315,7 @@
             </div>
         </div>
     </nav>
-    <nav class="snb-lg border collapse" id="collapseExample2">
+    <nav class="snb-lg border collapse show" id="collapseExample">
         <div class="position-sticky mt-2">
             <!--            <div class="d-flex align-items-center">-->
             <!--                <div class="ms-auto">-->
@@ -426,7 +424,7 @@
             </ul>
             <div class="d-flex align-items-center" href="" >
                 <div class="ms-auto">
-                    <button class="btn position-absolute btn-floating" data-mdb-toggle="collapse" data-mdb-parent="#accordion" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" style="z-index: 20; background-color: #fff; margin-left: -20px;">
+                    <button class="btn position-absolute btn-floating" data-mdb-toggle="collapse" data-mdb-parent="#accordion" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="z-index: 20; background-color: #fff; margin-left: -20px;">
                         <i class="bi-arrow-bar-left text-muted" style="font-size: 14px"></i>
                     </button>
                 </div>
@@ -968,7 +966,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Milestone</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Milestone 생성</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -987,7 +985,7 @@
                         </div>
                     </div>
                     <div class="mb-2 input-group input-group-sm">
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Milestone">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Milestone 명">
                     </div>
                     <div class="mb-2 input-group input-group-sm">
                         <input type="text" class="form-control" id="recipient-name" placeholder="Milestone 한줄 설명">
@@ -1137,7 +1135,7 @@
                                         <div class="d-flex align-items-center mt-3">
                                             <div class="w-25">
                                                  <span for="" class="text-muted" style="font-size: smaller">
-                                                    Tag 유형
+                                                    키워드
                                                 </span>
                                             </div>
                                             <div class="w-75">
@@ -1889,7 +1887,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Task</h5>
+                <h5 class="modal-title" id="exampleModalLabel">화면 기획 / Task 생성</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -1912,13 +1910,13 @@
                             </span>
                         </div>
                     </div>
-                    <div class="mb-2">
-                        <small class="">
-                                화면 기획
-                        </small>
-                    </div>
+<!--                    <div class="mb-2">-->
+<!--                        <small class="">-->
+<!--                                화면 기획-->
+<!--                        </small>-->
+<!--                    </div>-->
                     <div class="mb-2 input-group input-group-sm">
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Task">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Task 명">
                     </div>
 <!--                    <div class="mb-2">-->
 <!--                        <select type="text" class="form-select form-select-sm" id="message-text">-->

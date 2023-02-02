@@ -50,11 +50,9 @@
         <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
                 <li class="nav-item">
-                    <a class="nav-link active text-primary" aria-current="page" href="./workspaces.html">
+                    <a class="nav-link active" aria-current="page" href="./workspaces.html">
                         Workspaces
                     </a>
-                    <div class="border-bottom border-top w-100 border-primary">
-                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="./milestones.html">Milestones</a>
@@ -240,7 +238,7 @@
     </div>
 </nav>
 <main class="main d-flex overflow-auto" style="max-height: 100vh">
-    <nav class="snb border collapse show" id="collapseExample">
+    <nav class="snb border collapse" id="collapseExample2">
         <div class="position-sticky mt-2">
             <div class="pe-3 ps-3 pb-3 pt-3 text-center">
                 <img src="../assets/img/brands/google-icon.svg" alt="" style="width: 30px">
@@ -309,7 +307,7 @@
             </ul>
             <div class="d-flex align-items-center" href="" >
                 <div class="ms-auto" >
-                    <button class="btn position-absolute btn-floating" style="z-index: 20; background-color: #fff; margin-left: -20px;" data-mdb-toggle="collapse" data-mdb-parent="#accordion" aria-expanded="false" href="#collapseExample" role="button" aria-controls="collapseExample">
+                    <button class="btn position-absolute btn-floating" style="z-index: 20; background-color: #fff; margin-left: -20px;" data-mdb-toggle="collapse" data-mdb-parent="#accordion" aria-expanded="false" href="#collapseExample2" role="button" aria-controls="collapseExample2">
                         <i class="bi-arrow-bar-right text-muted" style="font-size: 14px"></i>
                     </button>
                 </div>
@@ -317,7 +315,7 @@
             </div>
         </div>
     </nav>
-    <nav class="snb-lg border collapse" id="collapseExample2">
+    <nav class="snb-lg border collapse show" id="collapseExample">
         <div class="position-sticky mt-2">
             <!--            <div class="d-flex align-items-center">-->
             <!--                <div class="ms-auto">-->
@@ -361,7 +359,7 @@
                         <div class="align-items-center d-flex">
                             <span class="material-icons-outlined text-muted">
                                     task
-                                </span>v
+                                </span>
                             <span class="ms-3 text-black small">
                                 Task
                             </span>
@@ -426,7 +424,7 @@
             </ul>
             <div class="d-flex align-items-center" href="" >
                 <div class="ms-auto">
-                    <button class="btn position-absolute btn-floating" data-mdb-toggle="collapse" data-mdb-parent="#accordion" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" style="z-index: 20; background-color: #fff; margin-left: -20px;">
+                    <button class="btn position-absolute btn-floating" data-mdb-toggle="collapse" data-mdb-parent="#accordion" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="z-index: 20; background-color: #fff; margin-left: -20px;">
                         <i class="bi-arrow-bar-left text-muted" style="font-size: 14px"></i>
                     </button>
                 </div>
@@ -435,37 +433,36 @@
         </div>
     </nav>
     <div class="container container-fluid ms-3 me-3">
-<!--        <div class="mt-3 d-flex align-items-center">-->
-<!--            <div class="me-auto">-->
-<!--                <small class="text-muted" style="font-size: smaller">-->
-<!--                    Workspace / 플랫폼 개발-->
-<!--                </small>-->
-<!--                <h4 class="mb-0 mt-1">-->
-<!--                    Channel-->
-<!--                </h4>-->
-<!--            </div>-->
-<!--            <div class="ms-auto d-flex align-items-center">-->
-<!--                <div class="d-flex align-items-center justify-content-center ms-3">-->
-<!--                    <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">-->
-<!--                    <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">-->
-<!--                    <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px;">-->
-<!--                    <span class="text-muted ms-1" style="font-size: 11px">-->
-<!--                                        +3-->
-<!--                                    </span>-->
-<!--                    <span class="material-icons-outlined text-muted ms-2" style="font-size: 18px">-->
-<!--                     person_add-->
-<!--                    </span>-->
+        <div class="mt-1 mb-2 d-flex align-items-center">
+            <div class="me-auto">
+                <small class="text-muted" style="font-size: smaller">
+                    Workspace / 플랫폼 개발
+                </small>
+                <h4 class="mb-0 mt-1">
+                    Channels
+                </h4>
+            </div>
+            <div class="ms-auto d-flex align-items-center">
+                <div class="d-flex align-items-center justify-content-center mt-4 me-4">
+                    <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
+                    <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
+                    <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px;">
+                    <span class="text-muted ms-1" style="font-size: 11px">
+                                        +3
+                                    </span>
+                    <a class="ms-2" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#invite-user">
+                        <span class="material-icons-outlined text-muted mt-1" style="font-size: 18px">
+                               person_add
+                        </span>
+                    </a>
 
-
-<!--                    <div class="input-group input-group-sm ms-3">-->
-<!--                        <input type="search" class="form-control" placeholder="Search">-->
-<!--                    </div>-->
-
-<!--                </div>-->
-
-<!--            </div>-->
-<!--        </div>-->
-        <div class="h-100">
+                    <!--                    <div class="input-group input-group-sm ms-3">-->
+                    <!--                        <input type="search" class="form-control" placeholder="Search">-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="h-100 border-top">
             <div class="row h-100">
                 <div class="pe-0" style="width: 23%">
                     <div class="card border-end-0 h-100" style="border-end-end-radius: 0; border-start-end-radius: 0; border-start-start-radius: 0; border-end-start-radius: 0">
