@@ -52,15 +52,17 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 m">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./workspaces.html">
-                        Workspaces
+                        워크스패이스
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="./milestones.html">Milestones</a>
+                    <a class="nav-link text-black" href="./milestones.html">
+                        과업
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" href="./experts.html">
-                        Experts
+                        전문가
                     </a>
                 </li>
             </ul>
@@ -349,8 +351,8 @@
                                     dashboard
                                 </span>
                             <span class="ms-3 small text-black">
-                                    Dashboard
-                                </span>
+                                    대시 보드
+                            </span>
                         </div>
 
                     </a>
@@ -362,7 +364,7 @@
                                     task
                                 </span>
                             <span class="ms-3 small">
-                                Tasks
+                                과업 목록
                             </span>
                         </div>
 
@@ -387,7 +389,7 @@
                             question_answer
                             </span>
                             <span class="ms-3 text-black small">
-                                Channels
+                                채널
                             </span>
                         </div>
                     </a>
@@ -399,7 +401,7 @@
                                     people
                             </span>
                             <span class="ms-3 text-black small">
-                                Members
+                                멤버
                             </span>
                         </div>
                     </a>
@@ -413,7 +415,7 @@
                                 settings
                             </span>
                                 <span class="ms-3 text-black small">
-                                Setting
+                                설정
                             </span>
                             </div>
                         </a>
@@ -439,10 +441,10 @@
                 <div class="d-flex align-items-center">
                     <div class="me-auto">
                         <small class="text-muted" style="font-size: smaller">
-                            Workspace / 플랫폼 개발 / Tasks
+                            워크스패이스 / 플랫폼 개발 / 과업 목록
                         </small>
                         <h4 class="mb-0 mt-1">
-                            Milestone
+                            과업
                         </h4>
                     </div>
                     <div class="ms-auto d-flex align-items-center">
@@ -466,7 +468,7 @@
                 <div class="mt-3 pe-3">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label small">
-                            Milestone 명
+                            과업명
                         </label>
                         <div class="w-100">
                             <div class="input-group input-group-sm">
@@ -477,7 +479,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label small">
-                            Milestone 한줄 설명
+                            과업 설명
                         </label>
                         <div class="w-100">
                             <div class="input-group input-group-sm">
@@ -502,7 +504,9 @@
                     </div>
                     <div class="mb-3">
                         <div class="d-flex">
-                            <label for="exampleFormControlInput1" class="form-label small me-auto">Task</label>
+                            <label for="exampleFormControlInput1" class="form-label small me-auto">
+                                상세 업무
+                            </label>
                             <div class="ms-auto">
                                 <div class="d-flex align-items-center justify-content-center ms-3">
                                     <span class="material-icons-outlined text-muted" style="font-size: 18px">
@@ -799,14 +803,14 @@
                                 <a class="nav-link small text-black"
                                    data-bs-toggle="tab" data-bs-target="#task-history" type="button" role="tab" aria-controls="task-history" aria-selected="true"
                                    style="font-size: smaller;">
-                                    마일스톤 모집
+                                    과업 모집
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link small text-black"
                                    data-bs-toggle="tab" data-bs-target="#issue-checklist" type="button" role="tab" aria-controls="issue-checklist" aria-selected="true"
                                    style="font-size: smaller;">
-                                    제안 마일스톤
+                                    제안 과업
                                 </a>
                             </li>
                         </ul>
@@ -814,19 +818,24 @@
                             <div class="tab-pane active" id="detail-info" role="tabpanel" aria-labelledby="detail-info-tab">
                                 <div class="row mt-3 ps-3">
                                     <label for="" class="col-2 col-form-label-sm mb-0" style="font-size: smaller">
-                                        수행 멤버
+                                        권한
                                     </label>
                                     <div class="col-6">
                                         <div class="d-flex align-items-center">
                                             <img class="user-sm" src="../assets/img/img7.jpg" alt="" style="z-index: 2">
                                             <img class="user-sm" src="../assets/img/img8.jpg" alt="" style="margin-left: -3px; z-index: 1">
                                             <img class="user-sm" src="../assets/img/img9.jpg" alt="" style="margin-left: -3px;">
+                                            <a class="ms-2" data-bs-toggle="modal" data-bs-target="#auth-users" style="cursor: pointer">
+                                    <span class="material-icons-outlined text-muted mt-1" style="font-size: 18px">
+                                           person_add
+                                    </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3 ps-3">
                                     <label for="" class="col-2 col-form-label-sm mb-0" style="font-size: smaller">
-                                        유형
+                                        업무 유형
                                     </label>
                                     <div class="col-6">
                                         <select name="" id="" class="form-select form-select-sm">
@@ -835,6 +844,21 @@
 
                                     </div>
                                 </div>
+                                <div class="row mt-3 ps-3">
+                                    <label for="" class="col-2 col-form-label-sm mb-0" style="font-size: smaller">
+                                        프로젝트
+                                    </label>
+                                    <div class="col-6">
+                                        <div class="d-flex align-items-center">
+                                            <select name="" id="" class="form-select form-select-sm">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
 
 
                             </div>
@@ -853,7 +877,7 @@
                                 </div>
                                 <div class="row mt-3 ps-3">
                                     <label for="" class="col-3 col-form-label-sm mb-0" style="font-size: smaller">
-                                        Task 유형
+                                        업무 유형
                                     </label>
                                     <div class="col-7">
                                         <div class="d-flex align-items-center">
@@ -1066,7 +1090,7 @@
                                                     <div class="d-flex">
                                                         <div class="me-auto">
                                                     <span class="small">
-                                                        Total: 3 Task / 30 일 / 346,000 원
+                                                        Total: 3개 과업 / 30 일 / 346,000 원
                                                     </span>
 
                                                         </div>
@@ -1160,7 +1184,7 @@
                                                     <div class="d-flex">
                                                         <div class="me-auto">
                                                     <span class="small">
-                                                        Total: 3 Task / 30 일 / 346,000 원
+                                                        Total: 3개 과업 / 30 일 / 346,000 원
                                                     </span>
 
                                                         </div>
@@ -1303,7 +1327,7 @@
                                                     <div class="d-flex">
                                                         <div class="me-auto">
                                                     <span class="small">
-                                                        Total: 3 Task / 30 일 / 346,000 원
+                                                        Total: 4개 과업 / 30 일 / 346,000 원
                                                     </span>
 
                                                         </div>
@@ -1342,18 +1366,18 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Task</h5>
+                <h5 class="modal-title" id="exampleModalLabel">화면 기획 / 상세 업무</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="pe-2 ps-2">
-                    <div class="mb-2">
-                        <small class="">
-                            화면 기획
-                        </small>
-                    </div>
+<!--                    <div class="mb-2">-->
+<!--                        <small class="">-->
+<!--                            화면 기획-->
+<!--                        </small>-->
+<!--                    </div>-->
                     <div class="mb-2 input-group input-group-sm">
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Task">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="상세 업무명">
                     </div>
                     <!--                    <div class="mb-2">-->
                     <!--                        <select type="text" class="form-select form-select-sm" id="message-text">-->
@@ -1403,7 +1427,7 @@
                                         <div class="d-flex align-items-center mt-3">
                                             <div class="w-25">
                                          <span for="" class="text-muted" style="font-size: smaller">
-                                        유형
+                                        업무 유형
                                     </span>
                                             </div>
                                             <div class="w-75">
@@ -1529,6 +1553,117 @@
                     닫기
                 </button>
 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="auth-users" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inviteUserModalLabel">
+                    권한 관리
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="">
+                    <div class="mb-2 input-group input-group-sm ps-3 pe-3 pt-3">
+                        <input type="text" class="form-control" id="recipient-name" placeholder="사용자 검색">
+                    </div>
+                    <div class="mb-2">
+                        <div class="d-flex align-items-center border-bottom ps-3 pe-3">
+                            <label for="message-text" class="me-auto col-form-label small text-muted" style="font-size: smaller">
+                                권한 사용자 목록
+                            </label>
+                            <div class="ms-auto d-flex align-items-center">
+                                <!--                                <span class="material-icons-outlined text-muted" style="font-size: 16px">-->
+                                <!--                                    more_horiz-->
+                                <!--                                </span>-->
+                                <!--                                <span class="material-icons-outlined ms-1 text-muted" style="font-size: 16px">-->
+                                <!--                                    add-->
+                                <!--                                </span>-->
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center p-2 border-bottom">
+                                <div class="me-auto">
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img7.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="small" style="font-size: smaller">
+                                                Kevin Who
+                                            </div>
+                                            <div class="text-muted" style="font-size: smaller">
+                                                kevin@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center p-2 border-bottom">
+                                <div class="me-auto">
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img3.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="small" style="font-size: smaller">
+                                                Thor
+                                            </div>
+                                            <div class="text-muted" style="font-size: smaller">
+                                                thor@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center p-2 border-bottom">
+                                <div class="me-auto">
+                                    <div class="align-content-center d-flex">
+                                        <img class="user" src="../assets/img/img4.jpg"/>
+                                        <div class="ms-2">
+                                            <div class="small" style="font-size: smaller">
+                                                Amelia
+                                            </div>
+                                            <div class="text-muted" style="font-size: smaller">
+                                                amelia@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <!--                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">-->
+                <!--                    Close-->
+                <!--                </button>-->
+                <button type="button" class="btn btn-primary btn-sm">
+                    저장
+                </button>
             </div>
         </div>
     </div>
